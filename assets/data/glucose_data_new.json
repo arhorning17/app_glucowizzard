@@ -1,0 +1,9347 @@
+[
+  {
+    "time": "17:36:11",
+    "glucoselevel": "81",    
+    "batteryLevel": "49\r\n"    
+  },
+  {
+    "time": "17:36:32",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:37:34",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:42:26",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:47:26",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:52:26",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:57:26",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:02:26",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:07:26",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:12:26",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:17:29",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:22:26",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:27:26",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:32:26",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:37:26",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:42:25",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:47:25",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:52:26",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:57:25",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:02:26",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:07:25",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:12:25",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:17:26",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:22:25",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:27:26",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:32:26",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:37:25",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:42:25",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:47:25",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:52:25",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:57:25",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:02:26",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:07:25",    
+    "glucoselevel": "134",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:12:25",    
+    "glucoselevel": "139",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:17:25",    
+    "glucoselevel": "136",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:22:25",    
+    "glucoselevel": "130",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:27:25",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:32:25",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:37:26",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:42:25",    
+    "glucoselevel": "123",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:47:25",    
+    "glucoselevel": "132",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:52:25",    
+    "glucoselevel": "136",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:57:25",    
+    "glucoselevel": "143",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:02:25",    
+    "glucoselevel": "142",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:07:25",    
+    "glucoselevel": "136",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:12:26",    
+    "glucoselevel": "138",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:17:25",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:22:25",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:27:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:32:25",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:37:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:42:25",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:47:26",    
+    "glucoselevel": "127",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:52:25",    
+    "glucoselevel": "136",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:57:25",    
+    "glucoselevel": "142",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:02:25",    
+    "glucoselevel": "139",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:07:25",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:12:25",    
+    "glucoselevel": "127",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:17:25",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:22:25",    
+    "glucoselevel": "128",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:27:25",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:32:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:37:25",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:42:25",    
+    "glucoselevel": "127",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:47:25",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:52:25",    
+    "glucoselevel": "128",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:57:25",    
+    "glucoselevel": "128",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:02:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:07:25",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:12:25",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:17:25",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:22:25",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:27:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:32:25",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:37:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:42:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:47:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:52:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:57:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:02:25",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:07:25",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:12:25",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:17:25",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:22:25",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:27:25",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:32:25",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:37:24",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:42:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:47:24",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:52:24",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:57:24",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:02:24",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:07:24",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:12:24",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:17:25",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:22:24",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:27:24",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:32:24",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:37:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:42:24",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:47:24",    
+    "glucoselevel": "128",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:52:25",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:57:25",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:02:25",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:07:28",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:12:24",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:17:24",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:22:24",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:27:25",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:32:24",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:37:24",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:42:24",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:47:24",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:52:24",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:57:24",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:02:25",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:07:24",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:12:24",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:17:24",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:22:24",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:27:24",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:32:24",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:37:27",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:42:24",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:47:24",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:52:24",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:57:24",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:02:24",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:07:24",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:12:25",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:17:24",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:22:24",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:27:24",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:32:24",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:37:24",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:42:24",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:47:24",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:52:24",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:57:24",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:02:24",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:07:24",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:12:24",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:17:24",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:22:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:27:24",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:32:24",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:37:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:42:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:47:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:52:24",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:57:24",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:02:24",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:07:24",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:12:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:17:24",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:22:24",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:27:24",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:32:24",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:37:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:42:24",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:47:27",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:52:24",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:57:23",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:02:24",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:07:24",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:12:23",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:17:23",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:22:23",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:27:24",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:32:23",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:37:24",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:42:24",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:47:23",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:52:23",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:57:23",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:02:23",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:07:23",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:12:23",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:17:24",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:22:23",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:27:23",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:32:23",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:37:23",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:42:23",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:47:23",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:52:24",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:57:23",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:02:23",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:07:23",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:12:23",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:17:23",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:22:23",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:27:24",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:30:35",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:33:21",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:38:16",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:43:15",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:48:14",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:53:14",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:58:14",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:03:15",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:08:14",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:13:15",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:18:15",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:23:14",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:28:14",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:33:14",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:38:14",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:43:14",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:48:14",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:53:14",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:58:14",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:03:14",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:08:14",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:13:14",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:18:14",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:23:14",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:28:14",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:33:14",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:38:14",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:43:15",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:48:14",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:53:14",    
+    "glucoselevel": "68",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:58:14",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:03:14",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:08:14",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:13:14",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:18:18",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:23:14",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:28:14",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:33:15",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:38:14",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:43:16",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:48:19",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:53:14",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:58:14",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:03:14",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:08:14",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:13:14",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:18:14",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:23:14",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:28:14",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:33:14",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:38:13",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:43:14",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:48:17",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:53:14",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:58:13",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:03:14",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:08:17",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:13:13",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:18:14",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:23:13",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:28:20",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:33:18",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:38:14",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:43:23",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:48:17",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:53:15",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:58:14",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:03:13",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:08:14",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:13:14",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:18:13",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:23:13",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:28:13",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:33:14",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:43:13",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:48:14",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:53:13",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:58:13",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:03:13",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:08:13",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:13:13",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:18:13",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:23:14",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:28:13",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:33:13",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:38:13",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:43:13",    
+    "glucoselevel": "69",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:48:13",    
+    "glucoselevel": "68",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:53:13",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:58:15",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:08:17",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:13:18",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:18:13",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:23:14",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:28:13",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:33:14",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:38:13",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:43:13",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:48:13",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:53:13",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:58:13",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:03:13",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:08:13",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:13:13",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:18:13",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:23:13",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:28:13",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:33:13",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:38:20",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:43:14",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:48:13",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:53:13",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:58:13",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:03:13",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:08:13",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:13:14",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:18:17",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:23:13",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:28:14",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:33:14",    
+    "glucoselevel": "69",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:38:17",    
+    "glucoselevel": "69",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:43:17",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:48:13",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:53:13",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:58:13",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:03:13",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:08:18",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:13:13",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:18:12",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:23:14",    
+    "glucoselevel": "68",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:28:12",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:33:12",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:38:13",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:43:16",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:48:12",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:50:32",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:53:17",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:58:13",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:03:12",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:08:12",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:13:12",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:23:13",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:28:13",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:33:13",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:38:12",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:43:16",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:48:12",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:53:12",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:58:13",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:23:12",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:33:13",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:38:13",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:43:12",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:48:12",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:53:12",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:58:12",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:03:12",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:08:12",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:13:13",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:18:12",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:23:12",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:28:12",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:33:12",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:38:12",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:43:12",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:48:12",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:53:12",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:58:12",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:03:12",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:08:12",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:13:12",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:18:12",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:23:12",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:28:12",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:33:12",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:38:16",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:43:12",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:48:12",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:53:12",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:58:12",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:03:16",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:08:12",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:13:12",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:18:12",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:23:12",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:28:12",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:33:12",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:38:11",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:43:12",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:48:11",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:53:11",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:58:11",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:03:11",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:08:12",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:18:12",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:23:11",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:28:12",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:33:11",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:38:11",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:43:16",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:48:11",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:53:11",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:58:11",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:03:12",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:08:11",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:13:11",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:18:12",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:23:11",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:28:11",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:33:12",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:38:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:43:11",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:48:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:53:16",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:58:11",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:03:11",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:08:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:13:11",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:18:11",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:23:11",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:28:11",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:33:12",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:38:11",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:43:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:48:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:53:11",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:58:11",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:03:11",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:08:11",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:13:11",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:18:11",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:23:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:28:11",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:33:12",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:38:11",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:43:11",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:48:11",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:53:11",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:58:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:03:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:08:11",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:13:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:18:11",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:23:11",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:28:11",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:33:11",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:38:11",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:43:15",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:48:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:53:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:58:11",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:03:11",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:08:15",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:13:11",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:18:11",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:23:11",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:28:11",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:33:11",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:38:11",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:43:11",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:48:10",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:53:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:58:10",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:03:11",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:08:11",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:13:15",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:18:15",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:23:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:28:11",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:33:10",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:38:11",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:43:10",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:48:10",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:53:10",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:58:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:03:12",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:08:10",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:13:10",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:18:10",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:23:10",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:28:10",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:33:11",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:38:15",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:43:15",    
+    "glucoselevel": "138",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:48:11",    
+    "glucoselevel": "147",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:53:16",    
+    "glucoselevel": "143",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:58:20",    
+    "glucoselevel": "147",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:03:11",    
+    "glucoselevel": "135",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:08:14",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:18:10",    
+    "glucoselevel": "69",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:33:10",    
+    "glucoselevel": "66",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:38:12",    
+    "glucoselevel": "64",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:43:10",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:48:10",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:53:10",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:58:14",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:03:10",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:08:15",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:13:11",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:18:10",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:23:10",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:28:10",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:33:10",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:38:10",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:43:10",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:48:11",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:53:10",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:58:14",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:03:11",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:08:10",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:13:15",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:43:10",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:48:10",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:53:10",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:58:10",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:03:10",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:08:10",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:13:10",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:18:10",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:23:10",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:28:19",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:33:10",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:38:10",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:43:10",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:48:13",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:53:10",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:58:10",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:03:10",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:08:09",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:13:09",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:18:09",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:23:09",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:28:09",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:33:10",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:38:09",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:43:10",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:48:09",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:53:09",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:58:09",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:03:09",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:08:10",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:13:09",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:18:10",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:23:09",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:28:09",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:33:09",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:38:09",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:43:10",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:48:09",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:53:09",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:58:09",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:03:11",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:38:13",    
+    "glucoselevel": "158",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:43:10",    
+    "glucoselevel": "157",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:48:14",    
+    "glucoselevel": "155",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:53:09",    
+    "glucoselevel": "137",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:58:10",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:03:09",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:08:09",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:13:09",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:18:14",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:23:09",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:28:09",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:33:09",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:38:10",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:03:11",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:08:11",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:18:10",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:28:16",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:33:12",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:03:09",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:08:10",    
+    "glucoselevel": "128",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:13:09",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:18:09",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:23:09",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:28:09",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:33:09",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:38:09",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:43:09",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:48:09",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:53:09",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:58:08",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:03:08",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:08:08",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:13:08",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:18:09",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:23:08",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:28:09",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:33:08",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:38:09",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:41:13",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:43:12",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:48:08",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:53:23",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:58:09",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:13:27",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:28:09",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:33:22",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:38:08",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:43:08",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:48:08",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:53:08",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:58:08",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:03:08",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:08:09",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:13:12",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:18:08",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:23:08",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:28:08",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:33:08",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:38:08",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:43:09",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:48:08",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:53:08",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:58:08",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:03:08",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:08:08",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:13:08",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:18:08",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:23:08",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:28:08",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:33:08",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:38:08",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:43:08",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:48:08",    
+    "glucoselevel": "132",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:53:08",    
+    "glucoselevel": "138",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:58:08",    
+    "glucoselevel": "135",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:03:08",    
+    "glucoselevel": "130",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:08:08",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:13:08",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:18:08",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:23:08",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:28:08",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:33:08",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:38:08",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:43:08",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:48:08",    
+    "glucoselevel": "133",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:53:08",    
+    "glucoselevel": "132",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:58:08",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:03:08",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:08:08",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:13:08",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:18:08",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:23:08",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:28:12",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:33:08",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:38:08",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:43:08",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:48:08",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:53:08",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:58:08",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:03:08",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:08:08",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:13:08",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:18:08",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:23:08",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:28:08",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:33:07",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:38:07",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:43:08",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:48:08",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:53:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:58:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:03:07",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:08:07",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:13:08",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:18:07",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:23:08",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:28:07",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:33:07",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:38:07",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:43:07",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:48:07",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:53:07",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:58:08",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:03:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:08:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:13:07",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:18:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:23:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:28:07",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:33:08",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:38:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:43:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:48:07",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:53:07",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:58:07",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:03:07",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:08:08",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:13:07",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:18:07",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:23:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:28:07",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:33:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:38:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:43:07",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:48:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:53:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:58:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:03:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:08:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:13:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:18:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:23:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:28:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:33:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:38:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:43:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:48:07",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:53:07",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:58:07",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:03:07",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:08:07",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:13:07",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:18:07",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:23:07",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:28:07",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:33:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:38:07",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:43:07",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:48:07",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:53:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:58:07",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:03:10",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:08:10",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:13:07",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:23:19",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:28:24",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:33:07",    
+    "glucoselevel": "139",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:38:11",    
+    "glucoselevel": "139",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:48:07",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:53:07",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:58:06",    
+    "glucoselevel": "55",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:03:06",    
+    "glucoselevel": "54",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:08:07",    
+    "glucoselevel": "60",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:13:06",    
+    "glucoselevel": "65",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:18:06",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:23:06",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:28:07",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:33:06",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:38:06",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:43:07",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:48:06",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:53:06",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:58:06",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:03:06",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:08:06",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:13:06",    
+    "glucoselevel": "69",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:18:07",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:23:11",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:28:06",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:33:06",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:38:06",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:43:06",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:48:06",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:53:07",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:58:06",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:03:07",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:08:06",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:13:11",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:18:07",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:23:07",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:28:12",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:33:07",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:38:10",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:43:06",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:48:07",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:53:07",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:58:06",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:03:11",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:08:21",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:13:06",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:18:06",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:23:06",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:28:06",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:33:06",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:38:06",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:43:06",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:48:06",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:53:06",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:58:06",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:03:06",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:08:06",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:13:06",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:18:07",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:23:06",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:28:10",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:33:06",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:38:06",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:48:06",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:53:06",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:58:06",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:03:06",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:08:06",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:13:06",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:18:06",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:23:06",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:28:06",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:33:06",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:38:05",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:43:06",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:48:05",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:53:06",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:58:15",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:18:06",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:38:09",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:43:08",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:48:05",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:53:06",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:03:15",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:08:05",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:13:05",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:18:06",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:23:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:28:05",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:33:05",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:38:05",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:43:05",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:48:14",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:53:16",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:08:07",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:13:07",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:18:05",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:23:05",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:28:15",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:33:09",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:38:12",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:43:07",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:48:09",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:53:10",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:03:05",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:08:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:13:14",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:18:20",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:23:13",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:28:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:33:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:38:05",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:43:07",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:48:17",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:53:10",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:58:11",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:03:18",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:08:11",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:13:21",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:18:06",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:23:07",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:28:06",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:33:05",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:38:07",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:43:05",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:48:09",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:53:05",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:58:05",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:03:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:08:05",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:13:05",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:18:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:23:05",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:33:05",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:38:06",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:48:29",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:58:13",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:02:22",    
+    "glucoselevel": "128",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:03:09",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:08:05",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:13:05",    
+    "glucoselevel": "130",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:18:05",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:23:04",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:28:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:33:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:38:04",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:43:05",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:48:05",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:53:05",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:58:05",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:03:05",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:08:05",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:13:04",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:18:05",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:23:04",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:28:04",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:33:04",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:38:05",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:43:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:48:09",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:53:05",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:58:04",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:03:04",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:08:04",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:13:04",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:18:04",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:23:04",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:28:05",    
+    "glucoselevel": "123",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:33:04",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:38:04",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:43:04",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:48:04",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:53:04",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:58:04",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:03:05",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:08:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:13:04",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:18:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:23:04",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:28:04",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:33:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:38:04",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:43:04",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:48:04",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:53:04",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:58:04",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:03:04",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:08:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:13:04",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:18:04",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:23:08",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:28:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:33:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:38:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:43:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:48:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:53:04",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:58:04",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:03:04",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:08:04",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:13:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:18:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:23:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:28:04",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:33:04",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:38:04",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:43:04",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:48:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:53:04",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:58:04",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:03:04",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:08:04",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:13:04",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:18:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:23:03",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:28:03",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:33:04",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:38:03",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:43:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:48:03",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:53:03",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:58:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:03:04",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:08:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:13:04",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:18:03",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:23:04",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:28:03",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:33:04",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:38:03",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:43:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:48:03",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:53:07",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:58:03",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:03:03",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:08:03",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:13:03",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:18:04",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:23:03",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:28:03",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:33:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:38:03",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:43:03",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:48:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:53:04",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:58:03",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:03:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:08:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:13:03",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:18:03",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:23:03",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:28:04",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:33:03",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:38:03",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:43:03",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:48:03",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:53:03",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:58:03",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:03:03",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:08:03",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:13:03",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:18:03",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:23:03",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:28:03",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:33:03",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:38:03",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:43:03",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:48:03",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:53:03",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:58:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:03:03",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:08:03",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:13:03",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:18:03",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:23:03",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:28:03",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:33:03",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:38:03",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:43:03",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:48:03",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:53:07",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:03:05",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:08:03",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:13:04",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:18:03",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:23:03",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:33:17",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:53:10",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:18:24",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:23:04",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:28:03",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:33:07",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:38:09",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:43:10",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:48:03",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:53:03",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:58:02",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:03:05",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:08:03",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:13:02",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:18:03",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:28:03",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:33:03",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:58:04",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:03:08",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:08:03",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:13:02",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:18:03",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:23:03",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:28:03",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:33:02",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:38:02",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:43:03",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:48:02",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:53:02",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:58:02",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:03:02",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:08:02",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:13:03",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:18:03",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:23:02",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:28:02",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:33:02",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:38:11",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:53:10",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:58:16",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:08:07",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:23:06",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:28:02",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:33:02",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:38:02",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:43:02",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:48:02",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:53:02",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:58:03",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:03:03",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:08:03",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:13:04",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:18:10",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:23:02",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:33:14",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:38:10",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:43:17",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:53:02",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:58:02",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:03:02",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:08:03",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:13:02",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:18:02",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:23:02",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:28:02",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:33:03",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:38:03",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:43:02",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:48:02",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:53:02",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:58:06",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:03:02",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:08:02",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:13:01",    
+    "glucoselevel": "131",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:18:02",    
+    "glucoselevel": "147",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:23:02",    
+    "glucoselevel": "164",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:28:02",    
+    "glucoselevel": "165",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:33:01",    
+    "glucoselevel": "151",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:38:01",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:43:01",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:48:06",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:08:01",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:28:16",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:33:02",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:38:09",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:43:01",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:48:02",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:53:01",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:58:01",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:03:03",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:08:07",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:13:11",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:33:10",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:48:11",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:53:02",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:58:01",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:03:01",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:08:01",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:13:01",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:18:01",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:23:01",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:28:01",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:33:01",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:38:01",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:43:01",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:48:01",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:52:41",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:53:07",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:58:01",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:03:06",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:08:01",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:13:01",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:18:01",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:23:01",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:28:01",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:33:01",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:38:01",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:43:02",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:48:00",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:53:00",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:58:01",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:03:01",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:08:01",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:13:01",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:18:00",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:23:01",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:28:00",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:33:00",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:38:00",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:43:01",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:48:01",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:53:01",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:58:00",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:13:01",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:18:01",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:33:16",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:43:14",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:48:19",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:23:22",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:33:07",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:38:19",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:43:13",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:48:27",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:03:19",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:08:04",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:13:18",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:18:05",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:23:07",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:33:01",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:38:01",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:43:08",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:43:00",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:48:01",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:52:59",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:57:59",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:02:59",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:07:59",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:12:59",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:23:00",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:28:00",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:32:59",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:37:59",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:42:59",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:47:59",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:52:59",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:57:59",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:02:59",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:07:59",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:13:04",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:23:01",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:28:15",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:33:00",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:12:59",    
+    "glucoselevel": "59",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:18:00",    
+    "glucoselevel": "66",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:22:58",    
+    "glucoselevel": "63",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:27:58",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:32:58",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:37:58",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:42:58",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:47:58",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:52:59",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:57:58",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:02:58",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:07:58",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:12:58",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:17:58",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:22:58",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:27:59",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:37:58",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:42:58",    
+    "glucoselevel": "138",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:47:58",    
+    "glucoselevel": "144",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:52:58",    
+    "glucoselevel": "140",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:57:58",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:02:59",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:07:58",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:12:58",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:17:58",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:22:58",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:27:58",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:33:02",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:38:03",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:42:58",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:47:58",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:52:58",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:57:58",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:02:58",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:07:58",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:12:58",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:17:58",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:22:58",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:27:58",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:32:58",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:37:58",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:42:58",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:47:58",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:52:58",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:57:58",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:02:58",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:07:58",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:12:58",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:17:58",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:22:58",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:27:58",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:32:58",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:37:58",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:42:58",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:47:58",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:52:58",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:57:58",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:02:58",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:07:58",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:12:58",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:17:57",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:22:58",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:27:58",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:32:58",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:37:57",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:42:58",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:47:57",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:52:57",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:57:57",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:02:57",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:07:58",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:12:57",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:17:58",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:22:57",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:27:57",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:32:57",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:37:57",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:42:58",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:47:57",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:52:57",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:57:57",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:02:57",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:07:57",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:12:57",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:17:58",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:22:57",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:27:57",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:32:57",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:37:57",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:42:57",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:47:57",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:52:58",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:57:57",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:02:57",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:07:57",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:12:57",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:17:57",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:22:57",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:27:57",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:32:57",    
+    "glucoselevel": "72",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:37:57",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:42:57",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:47:57",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:52:57",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:57:57",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:02:57",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:07:57",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:12:57",    
+    "glucoselevel": "76",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:17:57",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:22:57",    
+    "glucoselevel": "59",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:27:57",    
+    "glucoselevel": "55",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:32:57",    
+    "glucoselevel": "55",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:37:57",    
+    "glucoselevel": "57",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:42:57",    
+    "glucoselevel": "66",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:47:57",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:52:57",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:57:57",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:02:57",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:07:57",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:12:57",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:17:57",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:22:57",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:27:57",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:32:57",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:37:57",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:42:57",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:47:57",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:52:57",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:57:57",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:02:57",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:07:57",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:12:57",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:17:57",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:22:57",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:32:57",    
+    "glucoselevel": "116",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:37:57",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:42:57",    
+    "glucoselevel": "130",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:47:57",    
+    "glucoselevel": "133",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:52:57",    
+    "glucoselevel": "134",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:57:57",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:02:56",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:07:56",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:12:56",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:15:25",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:18:00",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:22:56",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:27:56",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:32:57",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:37:56",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:42:56",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:47:56",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:52:56",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:57:56",    
+    "glucoselevel": "123",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:02:56",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:07:57",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:12:57",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:17:56",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:22:57",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:27:56",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:32:56",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:37:56",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:42:57",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:47:56",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:52:56",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:57:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:02:57",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:07:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:12:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:17:57",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:22:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:27:56",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:32:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:37:56",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:42:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:47:56",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:52:57",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:57:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:02:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:07:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:12:56",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:17:56",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:22:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:27:56",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:32:56",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:37:56",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:42:56",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:47:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:52:56",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:57:56",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:02:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:07:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:12:56",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:17:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:22:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:27:56",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:32:56",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:37:56",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:42:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:47:56",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:52:56",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:57:56",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:02:56",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:07:56",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:12:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:17:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:22:56",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:27:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:32:56",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:37:56",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:42:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:47:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:52:55",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:57:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:02:55",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:07:55",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:12:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:17:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:22:56",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:27:55",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:32:56",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:37:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:42:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:48:00",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:52:56",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:57:55",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:02:59",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:07:56",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:12:55",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:17:56",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:22:55",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:27:56",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:32:55",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:37:55",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:42:55",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:47:55",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:52:55",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:57:55",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:02:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:07:55",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:12:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:17:55",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:22:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:27:55",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:32:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:37:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:42:55",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:47:55",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:52:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:57:55",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:02:55",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:07:55",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:12:55",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:17:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:22:55",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:27:55",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:32:55",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:37:55",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:42:55",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:47:56",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:52:55",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:57:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:02:55",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:07:55",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:12:55",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:17:55",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:22:55",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:27:55",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:32:55",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:37:55",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:42:55",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:47:55",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:52:55",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:57:56",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:07:59",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:13:06",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:28:06",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:33:19",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:38:24",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:43:02",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:47:56",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:52:55",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:57:56",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:02:55",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:07:55",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:12:56",    
+    "glucoselevel": "131",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:17:55",    
+    "glucoselevel": "138",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:23:05",    
+    "glucoselevel": "142",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:38:02",    
+    "glucoselevel": "146",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:43:05",    
+    "glucoselevel": "138",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:47:56",    
+    "glucoselevel": "127",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:52:56",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:57:57",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:02:54",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:08:00",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:12:55",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:17:55",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:22:54",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:28:01",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:32:59",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:37:57",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:42:59",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:48:02",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:52:57",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:57:56",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:02:57",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:08:00",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:12:56",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:18:03",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:22:57",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:28:01",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:32:55",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:37:55",    
+    "glucoselevel": "125",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:42:54",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:47:54",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:52:58",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:57:56",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:17:54",    
+    "glucoselevel": "105",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:22:54",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:27:54",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:32:54",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:37:54",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:42:54",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:47:54",    
+    "glucoselevel": "118",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:52:54",    
+    "glucoselevel": "121",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:57:55",    
+    "glucoselevel": "117",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:02:54",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:07:54",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:12:54",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:17:54",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:22:54",    
+    "glucoselevel": "112",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:27:54",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:32:54",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:37:54",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:42:54",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:47:54",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:52:54",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:57:54",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:02:54",    
+    "glucoselevel": "119",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:07:54",    
+    "glucoselevel": "132",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:12:54",    
+    "glucoselevel": "139",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:17:54",    
+    "glucoselevel": "132",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:22:54",    
+    "glucoselevel": "137",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:27:54",    
+    "glucoselevel": "124",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:32:54",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:37:54",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:42:54",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:47:54",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:52:54",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:57:54",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:02:54",    
+    "glucoselevel": "127",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:07:54",    
+    "glucoselevel": "139",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:12:54",    
+    "glucoselevel": "142",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:17:54",    
+    "glucoselevel": "143",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:22:54",    
+    "glucoselevel": "137",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:27:53",    
+    "glucoselevel": "132",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:32:54",    
+    "glucoselevel": "131",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:37:53",    
+    "glucoselevel": "122",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:42:53",    
+    "glucoselevel": "113",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:47:53",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:52:54",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:57:53",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:02:53",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:07:53",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:12:53",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:17:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:22:53",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:27:54",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:32:53",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:37:53",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:42:53",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:47:53",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:52:53",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:57:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:02:54",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:07:53",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:12:53",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:17:53",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:22:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:27:53",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:32:53",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:37:54",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:42:53",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:47:53",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:52:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:57:53",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:02:53",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:07:53",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:12:54",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:17:53",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:22:53",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:27:53",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:32:53",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:37:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:42:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:47:53",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:52:53",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:57:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:02:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:07:53",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:12:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:17:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:22:54",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:27:53",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:32:53",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:37:53",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:42:53",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:47:53",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:51:56",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:52:55",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:57:54",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:02:55",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:07:53",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:12:53",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:17:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:22:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:27:53",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:32:53",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:37:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:42:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:47:53",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:52:53",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:57:53",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:02:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:07:53",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:12:57",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:17:53",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:22:53",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:27:53",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:32:53",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:37:52",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:42:53",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:47:52",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:52:52",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:57:52",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:02:52",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:07:52",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:12:52",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:17:53",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:22:52",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:27:52",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:32:52",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:37:52",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:42:52",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:47:52",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:52:53",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "00:57:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:02:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:07:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:12:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:17:52",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:22:53",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:27:53",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:32:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:37:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:42:52",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:47:52",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:52:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "01:57:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:02:57",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:07:56",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:12:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:17:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:22:52",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:27:52",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:32:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:37:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:42:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:47:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:52:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "02:57:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:02:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:07:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:12:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:17:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:22:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:27:56",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:32:52",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:37:52",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:42:52",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:47:52",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:52:52",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "03:57:52",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:02:52",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:07:52",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:12:52",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:17:52",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:22:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:27:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:32:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:37:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:42:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:47:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:52:52",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "04:57:52",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:02:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:07:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:12:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:17:52",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:22:52",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:27:52",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:32:52",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:37:52",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:42:51",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:47:56",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:52:52",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "05:57:51",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:02:51",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:07:52",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:12:51",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:17:51",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:22:51",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:27:51",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:32:51",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:37:51",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:42:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:47:51",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:52:51",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "06:57:51",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:02:51",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:07:51",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:12:51",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:17:52",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:22:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:27:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:32:51",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:37:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:42:51",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:47:51",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:52:52",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "07:57:51",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:02:51",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:07:51",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:12:51",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:17:51",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:22:51",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:27:52",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:32:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:37:51",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:42:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:47:51",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:52:51",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "08:57:51",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:02:52",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:07:51",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:12:51",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:17:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:22:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:27:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:32:51",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:37:51",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:42:51",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:47:56",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "09:52:52",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "10:17:59",    
+    "glucoselevel": "106",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "11:52:51",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:02:51",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:07:53",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:12:50",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:17:50",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:22:50",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:27:50",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:32:51",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:37:50",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:42:51",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:47:50",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:52:50",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "12:57:50",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:02:50",    
+    "glucoselevel": "109",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:07:50",    
+    "glucoselevel": "111",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:12:54",    
+    "glucoselevel": "110",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:17:51",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:22:50",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:27:50",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:32:50",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:37:50",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:42:50",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:47:50",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:52:51",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "13:57:50",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:02:50",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:07:50",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:12:50",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:17:50",    
+    "glucoselevel": "108",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:22:50",    
+    "glucoselevel": "114",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:27:50",    
+    "glucoselevel": "120",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:32:50",    
+    "glucoselevel": "127",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:37:50",    
+    "glucoselevel": "129",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:42:50",    
+    "glucoselevel": "126",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:47:50",    
+    "glucoselevel": "115",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:52:50",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "14:57:50",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:02:51",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:07:54",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:12:50",    
+    "glucoselevel": "65",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:17:50",    
+    "glucoselevel": "66",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:22:50",    
+    "glucoselevel": "68",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:27:54",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:32:50",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:37:50",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:42:50",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:47:50",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:52:50",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "15:57:50",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:02:50",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:07:51",    
+    "glucoselevel": "87",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:12:50",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:17:50",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:22:50",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:27:50",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:32:50",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:37:50",    
+    "glucoselevel": "77",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:42:51",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:47:50",    
+    "glucoselevel": "82",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:52:54",    
+    "glucoselevel": "80",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "16:57:50",    
+    "glucoselevel": "78",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:02:50",    
+    "glucoselevel": "73",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:07:50",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:12:50",    
+    "glucoselevel": "68",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:17:50",    
+    "glucoselevel": "67",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:22:49",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:27:53",    
+    "glucoselevel": "71",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:32:50",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:37:49",    
+    "glucoselevel": "70",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:42:50",    
+    "glucoselevel": "74",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:47:50",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:52:50",    
+    "glucoselevel": "79",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "17:57:49",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:02:50",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:07:50",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:12:49",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:17:50",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:22:50",    
+    "glucoselevel": "84",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "18:32:50",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:02:51",    
+    "glucoselevel": "75",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:07:50",    
+    "glucoselevel": "86",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:12:49",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:17:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:22:57",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:28:01",    
+    "glucoselevel": "107",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:37:59",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:42:52",    
+    "glucoselevel": "81",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:47:49",    
+    "glucoselevel": "83",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:52:50",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "19:57:55",    
+    "glucoselevel": "85",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:02:49",    
+    "glucoselevel": "88",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:07:56",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:12:51",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:17:59",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:22:50",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:27:54",    
+    "glucoselevel": "92",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:37:51",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:39:03",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:42:51",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:47:49",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:52:49",    
+    "glucoselevel": "96",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "20:57:55",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:02:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:07:49",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:12:49",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:17:49",    
+    "glucoselevel": "90",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:22:49",    
+    "glucoselevel": "89",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:27:49",    
+    "glucoselevel": "91",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:32:49",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:37:49",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:42:49",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:47:49",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:52:49",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "21:57:49",    
+    "glucoselevel": "99",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:02:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:07:50",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:12:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:17:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:22:49",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:27:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:32:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:37:49",    
+    "glucoselevel": "102",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:42:49",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:47:49",    
+    "glucoselevel": "103",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:52:49",    
+    "glucoselevel": "104",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "22:57:49",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:02:49",    
+    "glucoselevel": "97",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:07:49",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:12:49",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:17:49",    
+    "glucoselevel": "101",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:22:49",    
+    "glucoselevel": "100",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:27:49",    
+    "glucoselevel": "98",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:32:49",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:37:48",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:42:49",    
+    "glucoselevel": "93",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:47:49",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:52:49",    
+    "glucoselevel": "95",
+    "batteryLevel": "49\r\n"
+  },
+  {
+    "time": "23:57:49",    
+    "glucoselevel": "94",
+    "batteryLevel": "49\r\n"
+  }
+]
