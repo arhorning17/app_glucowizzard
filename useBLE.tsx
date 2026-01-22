@@ -1,9 +1,6 @@
-import { useMemo, useState, useEffect } from "react";
+import { useMemo, useRef, useState, useEffect } from "react";
 import { PermissionsAndroid, Platform } from "react-native";
-import {
-  BleManager,
-  Device,
-} from "react-native-ble-plx";
+import { BleManager, Device } from "react-native-ble-plx";
 import * as ExpoDevice from "expo-device";
 import * as FileSystem from "expo-file-system";
 import base64 from "react-native-base64";
@@ -15,67 +12,61 @@ const GLUCOWIZZARD_READ_CHARACTERISTIC =
 const GLUCOWIZZARD_WRITE_CHARACTERISTIC =
   "6E400002-B5A3-F393-E0A9-E50E24DCCA9E";
 
-// ---------------------------------------------------------------------------
-// CSV LOGGING
-// ---------------------------------------------------------------------------
-let csvBuffer = "";
-const CSV_FLUSH_INTERVAL = 200;
-let currentCsvPath: string | null = null;
-let fileTransferStart: number | null = null;
+// -------------------------------------------------------------------------------------
+// FAST PIPELINE GOALS
+// 1) Keep BLE notification handler as cheap as possible (no async, no disk, no DB, no ISO)
+// 2) Buffer raw rows in memory: "ts,glucose,battery\n"
+// 3) At EOF: write CSV once (single I/O) then import into DB (ideally bulk/transaction)
+// -------------------------------------------------------------------------------------
 
-async function startNewCsvFile() {
+const CSV_HEADER = "time,glucoseLevel,batteryLevel\n";
+
+function makeCsvPath() {
   const timestamp = new Date().toISOString().replace(/[:.]/g, "-");
-  currentCsvPath = `${FileSystem.documentDirectory}log_${timestamp}.csv`;
-
-  await FileSystem.writeAsStringAsync(
-    currentCsvPath,
-    "time,glucoseLevel,batteryLevel\n",
-    { encoding: "utf8" }
-  );
-
-  console.log("📄 New CSV created:", currentCsvPath);
+  return `${FileSystem.documentDirectory}log_${timestamp}.csv`;
 }
 
-// Append to CSV buffer on a timer (fast)
-async function flushCsvBuffer() {
-  if (!currentCsvPath || csvBuffer.length === 0) return;
-
-  await FileSystem.writeAsStringAsync(
-    currentCsvPath,
-    csvBuffer,
-    { encoding: "utf8", append: true }
-  );
-
-  csvBuffer = "";
+// Optional: throttle UI updates so they don't contend with BLE stream
+function shouldUpdate(now: number, last: number, intervalMs: number) {
+  return now - last >= intervalMs;
 }
 
-// Import CSV → SQLite
+async function writeCsvOnce(path: string, rows: string[]) {
+  // Single disk write for best speed
+  const content = CSV_HEADER + rows.join("");
+  await FileSystem.writeAsStringAsync(path, content, {
+    encoding: FileSystem.EncodingType.UTF8,
+  });
+}
+
 async function importCsvToDatabase(csvPath: string) {
-  console.log("📥 Importing CSV into database:", csvPath);
-
+  // NOTE: This is still row-by-row unless you implement a bulk insert in saveDataToDB.
+  // It runs AFTER transfer, so it won't slow BLE throughput.
   const content = await FileSystem.readAsStringAsync(csvPath, {
-    encoding: "utf8",
+    encoding: FileSystem.EncodingType.UTF8,
   });
 
-  const lines = content.trim().split("\n");
-
-  // Skip the header row
+  const lines = content.split(/\r?\n/).filter(Boolean);
   for (let i = 1; i < lines.length; i++) {
-    const [time, glucoseLevel, batteryLevel] = lines[i].split(",");
+    const [tsStr, glucoseStr, batteryStr = ""] = lines[i].split(",");
+    const ts = Number(tsStr);
+    const glucoseLevel = Number(glucoseStr);
+    if (!Number.isFinite(ts) || !Number.isFinite(glucoseLevel)) continue;
+
+    // Convert timestamp once here (post-transfer)
+    const timeIso = new Date(ts * 1000).toISOString();
 
     await saveDataToDB({
-      time,
-      glucoseLevel: Number(glucoseLevel),
-      batteryLevel: batteryLevel || "",
+      time: timeIso,
+      glucoseLevel,
+      batteryLevel: batteryStr,
     });
   }
-
-  console.log("✅ CSV import complete");
 }
 
-// ---------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
 // BLE HOOK
-// ---------------------------------------------------------------------------
+// -------------------------------------------------------------------------------------
 function useBLE() {
   const bleManager = useMemo(() => new BleManager(), []);
 
@@ -83,14 +74,16 @@ function useBLE() {
   const [connectedDevice, setConnectedDevice] = useState<Device | null>(null);
   const [freqRate, setFreqRate] = useState<string>("0/0/0/0");
 
-  // CSV flush loop
-  useEffect(() => {
-    const interval = setInterval(() => {
-      flushCsvBuffer();
-    }, CSV_FLUSH_INTERVAL);
+  // Fast in-memory buffers / refs (no rerenders)
+  const csvRowsRef = useRef<string[]>([]);
+  const csvPathRef = useRef<string | null>(null);
+  const transferStartRef = useRef<number | null>(null);
+  const lastFreqUiUpdateRef = useRef<number>(0);
 
-    return () => clearInterval(interval);
-  }, []);
+  // Keep a handle to the subscription so we can clean up if needed
+  const monitorSubRef = useRef<ReturnType<
+    Device["monitorCharacteristicForService"]
+  > | null>(null);
 
   // ---------------------------------------------------------------------------
   // PERMISSIONS
@@ -146,106 +139,161 @@ function useBLE() {
   };
 
   // ---------------------------------------------------------------------------
-  // PACKET HANDLERS → CSV BUFFER
+  // PACKET PARSING (FAST PATH)
+  // We store RAW seconds timestamp in CSV rows to avoid ISO formatting in hot path.
+  // Row format buffered: "ts,glucose,battery\n"
   // ---------------------------------------------------------------------------
-  const handleLivePacket = (packet: string) => {
-    const [tsStr, glucoseStr, batteryStr] = packet.trim().split("/");
+  const pushLiveRow = (decoded: string) => {
+    // expected: "ts/glucose/battery"
+    const first = decoded.indexOf("/");
+    if (first < 0) return;
+    const second = decoded.indexOf("/", first + 1);
+    if (second < 0) return;
+
+    const tsStr = decoded.slice(0, first).trim();
+    const glucoseStr = decoded.slice(first + 1, second).trim();
+    const batteryStr = decoded.slice(second + 1).trim();
 
     const ts = Number(tsStr);
     const glucose = Number(glucoseStr);
-    const battery = Number(batteryStr);
 
-    if (isNaN(glucose)) return;
+    if (!Number.isFinite(ts) || !Number.isFinite(glucose)) return;
 
-    csvBuffer += `${new Date(ts * 1000).toISOString()},${glucose},${battery}\n`;
+    csvRowsRef.current.push(`${ts},${glucose},${batteryStr}\n`);
   };
 
-  const handleFileDataPacket = (packet: string) => {
-    const parts = packet.split(",");
-    if (parts.length !== 2) return;
+  const pushFileRow = (decoded: string) => {
+    // expected: "ts,glucose"
+    const comma = decoded.indexOf(",");
+    if (comma < 0) return;
 
-    const ts = Number(parts[0]);
-    const glucose = Number(parts[1]);
+    const tsStr = decoded.slice(0, comma).trim();
+    const glucoseStr = decoded.slice(comma + 1).trim();
 
-    if (isNaN(ts) || isNaN(glucose)) return;
+    const ts = Number(tsStr);
+    const glucose = Number(glucoseStr);
 
-    csvBuffer += `${new Date(ts * 1000).toISOString()},${glucose},\n`;
+    if (!Number.isFinite(ts) || !Number.isFinite(glucose)) return;
+
+    csvRowsRef.current.push(`${ts},${glucose},\n`);
   };
 
-  const handleFreqPacket = (packet: string) => {
-    const parts = packet.split(",");
-    if (parts.length !== 2) return;
-
-    const value = Number(parts[1]);
-    if (!isNaN(value) && value > 50 && value < 5000) {
-      setFreqRate(packet);
+  // Header/end detection: expected "a/b/c/flag"
+  const parseSlash4Flag = (decoded: string) => {
+    // Cheap: only split when we see at least 3 slashes
+    let slashCount = 0;
+    for (let i = 0; i < decoded.length; i++) {
+      if (decoded.charCodeAt(i) === 47) slashCount++;
+      if (slashCount >= 3) break;
     }
+    if (slashCount < 3) return null;
+
+    const parts = decoded.split("/");
+    if (parts.length !== 4) return null;
+
+    const flag = Number(parts[3]);
+    if (!Number.isFinite(flag)) return null;
+
+    return flag; // 1 header, 0 end
   };
 
   // ---------------------------------------------------------------------------
-  // UNIFIED LISTENER
+  // LISTENER
   // ---------------------------------------------------------------------------
-  const startUnifiedListener = async (device: Device) => {
+  const startUnifiedListener = (device: Device) => {
+    console.log("Starting unified BLE listener...");
+
+    // Ensure any previous monitor is removed
     try {
-      console.log("Starting unified BLE listener...");
+      // react-native-ble-plx returns a subscription-like object on iOS;
+      // on Android it's also safe to just start a new one per connection.
+      // We'll store it anyway.
+      monitorSubRef.current?.remove?.();
+    } catch {}
 
-      await device.monitorCharacteristicForService(
-        GLUCOWIZZARD_UUID,
-        GLUCOWIZZARD_READ_CHARACTERISTIC,
-        (error, characteristic) => {
-          if (error || !characteristic?.value) return;
+    monitorSubRef.current = device.monitorCharacteristicForService(
+      GLUCOWIZZARD_UUID,
+      GLUCOWIZZARD_READ_CHARACTERISTIC,
+      (error, characteristic) => {
+        if (error || !characteristic?.value) return;
 
-          const decoded = base64.decode(characteristic.value);
-          const slashParts = decoded.split("/");
-          const commaParts = decoded.split(",");
+        // Decode base64 (required)
+        const decoded = base64.decode(characteristic.value);
 
-          // FILE HEADER
-          if (slashParts.length === 4 && Number(slashParts[3]) === 1) {
-            fileTransferStart = Date.now();
-            console.log("📁 File header:", decoded);
-            return;
-          }
-
-          // FILE END
-          if (slashParts.length === 4 && Number(slashParts[3]) === 0) {
-            console.log("📁 End of file:", decoded);
-
-            if (fileTransferStart) {
-              const durationMs = Date.now() - fileTransferStart;
-              const durationSec = (durationMs / 1000).toFixed(2);
-              console.log(
-                `📁 File transfer completed in ${durationSec} seconds`
-              );
-            }
-
-            fileTransferStart = null;
-
-            // Import CSV into database
-            if (currentCsvPath) {
-              importCsvToDatabase(currentCsvPath);
-            }
-
-            return;
-          }
-
-          // LIVE PACKET
-          if (slashParts.length === 3) {
-            handleLivePacket(decoded);
-            return;
-          }
-
-          // FILE DATA PACKET
-          if (commaParts.length === 2) {
-            handleFileDataPacket(decoded);
-            return;
-          }
-
-          console.warn("Unknown packet:", decoded);
+        // 1) Header/EOF are slash-4 packets; detect fast
+        const flag = parseSlash4Flag(decoded);
+        if (flag === 1) {
+          transferStartRef.current = Date.now();
+          console.log("📁 File header:", decoded);
+          return;
         }
-      );
-    } catch (e) {
-      console.error("Unified listener failed:", e);
-    }
+        if (flag === 0) {
+          console.log("📁 End of file:", decoded);
+
+          const start = transferStartRef.current;
+          if (start) {
+            const durationSec = ((Date.now() - start) / 1000).toFixed(2);
+            console.log(`📁 File transfer completed in ${durationSec} seconds`);
+          }
+          transferStartRef.current = null;
+
+          // Kick off post-processing AFTER transfer (async, not blocking BLE handler)
+          const csvPath = csvPathRef.current;
+          const rows = csvRowsRef.current.slice();
+          csvRowsRef.current = []; // clear immediately to free memory
+
+          if (csvPath) {
+            void (async () => {
+              try {
+                await writeCsvOnce(csvPath, rows);
+                console.log("💾 CSV saved:", csvPath);
+
+                await importCsvToDatabase(csvPath);
+                console.log("✅ CSV import complete");
+              } catch (e) {
+                console.error("Post-processing failed:", e);
+              }
+            })();
+          }
+          return;
+        }
+
+        // 2) Live packet: "ts/glucose/battery"
+        // Avoid split unless needed
+        if (decoded.indexOf("/") !== -1) {
+          // If it's not slash4, it's likely slash3 live
+          // Push row fast (manual slicing)
+          pushLiveRow(decoded);
+          return;
+        }
+
+        // 3) File data packet: "ts,glucose"
+        if (decoded.indexOf(",") !== -1) {
+          // Could also be freq packet; treat freq as UI-only if you still need it
+          // If you want to distinguish, do a cheap numeric check of the second value range.
+          const comma = decoded.indexOf(",");
+          const secondStr = decoded.slice(comma + 1).trim();
+          const v = Number(secondStr);
+
+          // Heuristic: freq packets are typically high (50..5000) and might arrive during live mode.
+          // If this is a file dump, glucose likely 40..400. We'll route accordingly.
+          if (Number.isFinite(v) && v > 50 && v < 5000 && decoded.length < 32) {
+            // Throttle UI updates to avoid slowing BLE stream
+            const now = Date.now();
+            if (shouldUpdate(now, lastFreqUiUpdateRef.current, 500)) {
+              lastFreqUiUpdateRef.current = now;
+              setFreqRate(decoded);
+            }
+            return;
+          }
+
+          pushFileRow(decoded);
+          return;
+        }
+
+        // console.warn("Unknown packet:", decoded); // avoid logging in hot path
+      }
+    );
   };
 
   // ---------------------------------------------------------------------------
@@ -261,6 +309,7 @@ function useBLE() {
       await deviceConnection.discoverAllServicesAndCharacteristics();
       console.log("Services discovered");
 
+      // MTU (Android)
       try {
         await deviceConnection.requestMTU(185);
         console.log("MTU updated to:", deviceConnection.mtu);
@@ -268,11 +317,22 @@ function useBLE() {
         console.log("MTU request failed → MTU likely fixed at 23");
       }
 
+      // Optional: ask for high connection priority (Android only; may not exist in your version)
+      if (Platform.OS === "android") {
+        try {
+          await deviceConnection.requestConnectionPriority?.(1);
+          console.log("Requested high connection priority");
+        } catch {}
+      }
+
       bleManager.stopDeviceScan();
       setConnectedDevice(deviceConnection);
 
-      // Start CSV file
-      await startNewCsvFile();
+      // Prepare buffers for this session
+      csvRowsRef.current = [];
+      csvPathRef.current = makeCsvPath();
+
+      console.log("📄 CSV will be written at EOF:", csvPathRef.current);
 
       // Start listener BEFORE sending commands
       startUnifiedListener(deviceConnection);
@@ -283,7 +343,7 @@ function useBLE() {
         "1113/" + new Date().toISOString()
       );
 
-      await new Promise((res) => setTimeout(res, 500));
+      await new Promise((res) => setTimeout(res, 300));
 
       // Request file dump
       console.log("Sending 1116 for file dump...");
@@ -298,7 +358,8 @@ function useBLE() {
 
     try {
       const encoded = base64.encode(sendString);
-      console.log("Sending:", sendString);
+      // Avoid excessive logging during throughput tests
+      // console.log("Sending:", sendString);
 
       await bleManager.writeCharacteristicWithoutResponseForDevice(
         device.id,
@@ -313,6 +374,9 @@ function useBLE() {
 
   const disconnectFromDevice = () => {
     if (connectedDevice) {
+      try {
+        monitorSubRef.current?.remove?.();
+      } catch {}
       bleManager.cancelDeviceConnection(connectedDevice.id);
       setConnectedDevice(null);
       setFreqRate("0/0/0/0");
