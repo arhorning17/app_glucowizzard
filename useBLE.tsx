@@ -26,7 +26,7 @@ function makeCsvPath() {
   return `${FileSystem.documentDirectory}log_${timestamp}.csv`;
 }
 
-// Optional: throttle UI updates so they don't contend with BLE stream
+// throttle UI updates so they don't contend with BLE stream
 function shouldUpdate(now: number, last: number, intervalMs: number) {
   return now - last >= intervalMs;
 }
@@ -40,7 +40,6 @@ async function writeCsvOnce(path: string, rows: string[]) {
 }
 
 async function importCsvToDatabase(csvPath: string) {
-  // NOTE: This is still row-by-row unless you implement a bulk insert in saveDataToDB.
   // It runs AFTER transfer, so it won't slow BLE throughput.
   const content = await FileSystem.readAsStringAsync(csvPath, {
     encoding: FileSystem.EncodingType.UTF8,
@@ -140,7 +139,6 @@ function useBLE() {
 
   // ---------------------------------------------------------------------------
   // PACKET PARSING (FAST PATH)
-  // We store RAW seconds timestamp in CSV rows to avoid ISO formatting in hot path.
   // Row format buffered: "ts,glucose,battery\n"
   // ---------------------------------------------------------------------------
   const pushLiveRow = (decoded: string) => {
@@ -205,9 +203,6 @@ function useBLE() {
 
     // Ensure any previous monitor is removed
     try {
-      // react-native-ble-plx returns a subscription-like object on iOS;
-      // on Android it's also safe to just start a new one per connection.
-      // We'll store it anyway.
       monitorSubRef.current?.remove?.();
     } catch {}
 
@@ -246,10 +241,10 @@ function useBLE() {
             void (async () => {
               try {
                 await writeCsvOnce(csvPath, rows);
-                console.log("💾 CSV saved:", csvPath);
+                console.log("CSV saved:", csvPath);
 
                 await importCsvToDatabase(csvPath);
-                console.log("✅ CSV import complete");
+                console.log("CSV import complete");
               } catch (e) {
                 console.error("Post-processing failed:", e);
               }
@@ -317,7 +312,7 @@ function useBLE() {
         console.log("MTU request failed → MTU likely fixed at 23");
       }
 
-      // Optional: ask for high connection priority (Android only; may not exist in your version)
+      // Optional: ask for high connection priority
       if (Platform.OS === "android") {
         try {
           await deviceConnection.requestConnectionPriority?.(1);
@@ -332,7 +327,7 @@ function useBLE() {
       csvRowsRef.current = [];
       csvPathRef.current = makeCsvPath();
 
-      console.log("📄 CSV will be written at EOF:", csvPathRef.current);
+      console.log("CSV will be written at EOF:", csvPathRef.current);
 
       // Start listener BEFORE sending commands
       startUnifiedListener(deviceConnection);
