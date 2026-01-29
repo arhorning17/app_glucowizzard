@@ -354,7 +354,7 @@ function useBLE() {
     try {
       const encoded = base64.encode(sendString);
       // Avoid excessive logging during throughput tests
-      // console.log("Sending:", sendString);
+      console.log("Sending:", sendString);
 
       await bleManager.writeCharacteristicWithoutResponseForDevice(
         device.id,

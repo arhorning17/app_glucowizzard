@@ -97,6 +97,7 @@ export default function LiveScreen() {
     sendDataToDevice(connectedDevice, "1111");
   };
   
+  /*
   const startAlignment = () => {
     if (!connectedDevice) return console.log("No connected device");
     sendDataToDevice(connectedDevice, "1112");
@@ -106,7 +107,7 @@ export default function LiveScreen() {
     if (!connectedDevice) return console.log("No connected device");
     sendDataToDevice(connectedDevice, "1113");
   };
-
+*/
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="lightblue" />
@@ -184,24 +185,6 @@ export default function LiveScreen() {
             </TouchableOpacity>
           </View>
 
-          {/* ALIGNMENT BUTTONS */}
-          <View style={styles.buttonRow}>
-            <TouchableOpacity
-              style={styles.button}
-              disabled={!connectedDevice}
-              onPress={() => connectedDevice && sendDataToDevice(connectedDevice, "1112")}
-            >
-              <Text style={styles.buttonText}>Start Alignment</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.button}
-              disabled={!connectedDevice}
-              onPress={() => connectedDevice && sendDataToDevice(connectedDevice, "1113")}
-            >
-              <Text style={styles.buttonText}>Stop Alignment</Text>
-            </TouchableOpacity>
-          </View>
         </>
       ) : null}
 

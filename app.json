@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "glucowizzard",
-    "slug": "glucowizzard",
+    "name": "glucowizzard-new",
+    "slug": "glucowizzard-new",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
