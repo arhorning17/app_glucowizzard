@@ -1,17 +1,26 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, Dimensions, TouchableOpacity, Switch, Image } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Dimensions,
+  TouchableOpacity,
+  Switch,
+  Alert,
+} from "react-native";
 import { Ionicons } from "@expo/vector-icons";
-import { VictoryChart, VictoryScatter, VictoryAxis, VictoryTheme } from "victory-native";
+import {
+  VictoryChart,
+  VictoryScatter,
+  VictoryAxis,
+  VictoryTheme,
+} from "victory-native";
 
 import { useBLEContext } from "../BLEContext";
 import { saveDataToDB, readDataFromDB } from "../src/database";
 
 export default function AlignmentScreen({ navigation }) {
-  const {
-    connectedDevice,
-    sendDataToDevice,
-    freqRate,
-  } = useBLEContext();
+  const { connectedDevice, sendDataToDevice, freqRate } = useBLEContext();
 
   // BLE values (same parsing as LiveScreen)
   let glucoseVal = 0;
@@ -23,16 +32,33 @@ export default function AlignmentScreen({ navigation }) {
     batteryVal = Number(parts[2]) || 0;
   }
 
+  // ✅ Track alignment running (same style as LiveScreen)
+  const [isAlignmentRunning, setIsAlignmentRunning] = useState(false);
+
+  // If device disconnects, reset states
+  useEffect(() => {
+    if (!connectedDevice) {
+      setIsAlignmentRunning(false);
+    }
+  }, [connectedDevice]);
+
   // LED state
   const [ledCenterMode, setLedCenterMode] = useState(false);
 
   const toggleLED = () => {
-    setLedCenterMode(!ledCenterMode);
-    if (!connectedDevice) return;
+    if (!connectedDevice) {
+      Alert.alert("Not Connected", "Connect to the device first.");
+      return;
+    }
+
+    const next = !ledCenterMode;
+    setLedCenterMode(next);
 
     const AllLED = "1114";
     const CenterLED = "1115";
-    sendDataToDevice(connectedDevice, ledCenterMode ? AllLED : CenterLED);
+
+    // ✅ use the NEXT value (fixes the old-state bug)
+    sendDataToDevice(connectedDevice, next ? CenterLED : AllLED);
   };
 
   // Alignment graph state (same as Live)
@@ -41,7 +67,7 @@ export default function AlignmentScreen({ navigation }) {
   const [now, setNow] = useState(Date.now());
   const WINDOW_MS = 3 * 60 * 1000; // 3 minutes
 
-  // Load initial stored values (optional — mirrors Live)
+  // Load initial stored values
   useEffect(() => {
     readDataFromDB((rows) => {
       if (!rows) return;
@@ -59,7 +85,7 @@ export default function AlignmentScreen({ navigation }) {
     return () => clearInterval(interval);
   }, []);
 
-  // Add new BLE data exactly like LiveScreen
+  // Add new BLE data like LiveScreen
   useEffect(() => {
     if (!connectedDevice || !Number.isFinite(glucoseVal)) return;
 
@@ -79,18 +105,56 @@ export default function AlignmentScreen({ navigation }) {
     });
   }, [glucoseVal, connectedDevice]);
 
-  // Filtering / domain same as Live
-  const safeData = data.filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
+  const safeData = data.filter(
+    (p) => Number.isFinite(p.x) && Number.isFinite(p.y)
+  );
   const lastX = safeData.length ? safeData[safeData.length - 1].x : now;
   const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
 
-  // Commands
+  // Commands (same UX pattern as LiveScreen)
   const startAlignment = () => {
-    if (connectedDevice) sendDataToDevice(connectedDevice, "1112");
+    if (!connectedDevice) {
+      Alert.alert("Not Connected", "Connect to the device first.");
+      return;
+    }
+    if (isAlignmentRunning) {
+      Alert.alert("Already Running", "Alignment is already active.");
+      return;
+    }
+
+    sendDataToDevice(connectedDevice, "1112");
+    setIsAlignmentRunning(true);
+    Alert.alert("Alignment Started", "✅ Alignment mode is now ACTIVE.");
   };
 
   const stopAlignment = () => {
-    if (connectedDevice) sendDataToDevice(connectedDevice, "1113");
+    if (!connectedDevice) {
+      Alert.alert("Not Connected", "Connect to the device first.");
+      return;
+    }
+    if (!isAlignmentRunning) {
+      Alert.alert("Already Stopped", "Alignment is already stopped.");
+      return;
+    }
+
+    Alert.alert(
+      "Stop Alignment",
+      "Are you sure you want to stop alignment mode?",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Stop",
+          style: "destructive",
+          onPress: () => {
+            (async () => {
+              await sendDataToDevice(connectedDevice, "1113");
+              setIsAlignmentRunning(false);
+              Alert.alert("Alignment Stopped", "🛑 Alignment mode is now STOPPED.");
+            })();
+          },
+        },
+      ]
+    );
   };
 
   return (
@@ -104,12 +168,22 @@ export default function AlignmentScreen({ navigation }) {
         <View style={{ width: 26 }} />
       </View>
 
-      {/* BATTERY & STATUS (optional, matches Live look) */}
+      {/* STATUS BAR */}
       <View style={styles.statusBar}>
         <Text style={styles.statusText}>
-          {connectedDevice ? "Connected" : "Not Connected"}
+          {connectedDevice ? "✅ Connected" : "❌ Not Connected"}
         </Text>
         <Text style={styles.statusText}>Battery: {batteryVal}%</Text>
+
+        {/* ✅ Alignment status label like LiveScreen */}
+        <Text
+          style={[
+            styles.alignStatus,
+            isAlignmentRunning ? styles.statusOn : styles.statusOff,
+          ]}
+        >
+          {isAlignmentRunning ? "● Alignment ACTIVE" : "● Alignment STOPPED"}
+        </Text>
       </View>
 
       {/* GRAPH */}
@@ -139,17 +213,29 @@ export default function AlignmentScreen({ navigation }) {
               })
             }
           />
-          <VictoryScatter size={3} style={{ data: { fill: "#8b0000" } }} data={safeData} />
+          <VictoryScatter
+            size={3}
+            style={{ data: { fill: "#8b0000" } }}
+            data={safeData}
+          />
         </VictoryChart>
       </View>
 
-      {/* CONTROLS BOTTOM */}
+      {/* CONTROLS */}
       <View style={styles.controls}>
-        <TouchableOpacity style={styles.button} onPress={startAlignment}>
+        <TouchableOpacity
+          style={[styles.button, isAlignmentRunning && styles.buttonDisabled]}
+          onPress={startAlignment}
+          disabled={isAlignmentRunning}
+        >
           <Text style={styles.buttonText}>Start Alignment</Text>
         </TouchableOpacity>
 
-        <TouchableOpacity style={styles.button} onPress={stopAlignment}>
+        <TouchableOpacity
+          style={[styles.button, !isAlignmentRunning && styles.buttonDisabled]}
+          onPress={stopAlignment}
+          disabled={!isAlignmentRunning}
+        >
           <Text style={styles.buttonText}>Stop Alignment</Text>
         </TouchableOpacity>
       </View>
@@ -157,7 +243,12 @@ export default function AlignmentScreen({ navigation }) {
       {/* LED Toggle */}
       <View style={styles.ledRow}>
         <View style={{ flexDirection: "row", alignItems: "center" }}>
-          <Ionicons name="bulb-outline" size={22} color="#003B7A" style={{ marginRight: 8 }} />
+          <Ionicons
+            name="bulb-outline"
+            size={22}
+            color="#003B7A"
+            style={{ marginRight: 8 }}
+          />
           <Text style={styles.ledLabel}>
             {ledCenterMode ? "Center LED" : "All LEDs"}
           </Text>
@@ -169,7 +260,12 @@ export default function AlignmentScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "white", paddingTop: 10, alignItems: "center" },
+  container: {
+    flex: 1,
+    backgroundColor: "white",
+    paddingTop: 10,
+    alignItems: "center",
+  },
 
   header: {
     width: "92%",
@@ -194,6 +290,11 @@ const styles = StyleSheet.create({
     color: "#003B7A",
   },
 
+  // ✅ alignment status label (like Live)
+  alignStatus: { marginTop: 8, fontSize: 16, fontWeight: "700" },
+  statusOn: { color: "green" },
+  statusOff: { color: "red" },
+
   chartContainer: {
     marginTop: 10,
     backgroundColor: "lightblue",
@@ -210,6 +311,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 22,
     borderRadius: 8,
     marginHorizontal: 10,
+  },
+  buttonDisabled: {
+    opacity: 0.5,
   },
   buttonText: { color: "white", fontSize: 18, fontWeight: "bold" },
 

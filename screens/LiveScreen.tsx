@@ -1,8 +1,20 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet, Dimensions, Image, TouchableOpacity, StatusBar } from "react-native";
-import { VictoryChart, VictoryScatter, VictoryAxis, VictoryTheme } from "victory-native";
-import base64 from "react-native-base64";
-import { Ionicons } from "@expo/vector-icons";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Dimensions,
+  Image,
+  TouchableOpacity,
+  StatusBar,
+  Alert,
+} from "react-native";
+import {
+  VictoryChart,
+  VictoryScatter,
+  VictoryAxis,
+  VictoryTheme,
+} from "victory-native";
 
 import { useBLEContext } from "../BLEContext";
 import DeviceModal from "../DeviceConnectionModal";
@@ -28,6 +40,16 @@ export default function LiveScreen() {
     if (ok) scanForPeripherals();
     setModalVisible(true);
   };
+
+  // ✅ Track which button state is active
+  const [isGlucoseRunning, setIsGlucoseRunning] = useState(false);
+
+  // If device disconnects, reset button state
+  useEffect(() => {
+    if (!connectedDevice) {
+      setIsGlucoseRunning(false);
+    }
+  }, [connectedDevice]);
 
   let glucoseVal = 0;
   let batteryVal = 0;
@@ -82,32 +104,63 @@ export default function LiveScreen() {
     });
   }, [glucoseVal, connectedDevice]);
 
-  const safeData = data.filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
+  const safeData = data.filter(
+    (p) => Number.isFinite(p.x) && Number.isFinite(p.y)
+  );
   const lastX = safeData.length ? safeData[safeData.length - 1].x : now;
   const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
 
   // Commands
   const startGlucose = () => {
-    if (!connectedDevice) return console.log("No connected device");
+    if (!connectedDevice) {
+      Alert.alert("Not Connected", "Connect to the device first.");
+      return;
+    }
+    if (isGlucoseRunning) {
+      Alert.alert("Already Running", "Glucose streaming is already active.");
+      return;
+    }
+
     sendDataToDevice(connectedDevice, "1110");
+    setIsGlucoseRunning(true);
+    Alert.alert("Glucose Started", "Glucose streaming is now ACTIVE.");
   };
-  
+
   const stopGlucose = () => {
-    if (!connectedDevice) return console.log("No connected device");
-    sendDataToDevice(connectedDevice, "1111");
-  };
+    if (!connectedDevice) {
+      Alert.alert("Not Connected", "Connect to the device first.");
+      return;
+    }
+    if (!isGlucoseRunning) {
+      Alert.alert("Already Stopped", "Glucose streaming is already stopped.");
+      return;
+    }
   
-  /*
-  const startAlignment = () => {
-    if (!connectedDevice) return console.log("No connected device");
-    sendDataToDevice(connectedDevice, "1112");
+    Alert.alert(
+      "Stop Glucose Streaming",
+      "Are you sure you want to stop glucose streaming?",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Stop",
+          style: "destructive",
+          onPress: async () => {
+            await sendDataToDevice(connectedDevice, "1111");
+            setIsGlucoseRunning(false);
+            Alert.alert("Glucose Stopped", "Glucose streaming is now STOPPED.");
+          },
+        },
+      ]
+    );
   };
-  
-  const stopAlignment = () => {
-    if (!connectedDevice) return console.log("No connected device");
-    sendDataToDevice(connectedDevice, "1113");
+
+  // Wrap disconnect so we reset state + alert
+  const handleDisconnect = () => {
+    setIsGlucoseRunning(false);
+    disconnectFromDevice();
+    Alert.alert("Disconnected", "Device disconnected.");
   };
-*/
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="lightblue" />
@@ -116,19 +169,30 @@ export default function LiveScreen() {
       <Image source={require("../Images/logo.jpg")} style={styles.logo} />
 
       {/* CONNECTION BAR */}
-      <View style={[styles.connectionBar, connectedDevice ? styles.connectedBar : styles.disconnectedBar]}>
+      <View
+        style={[
+          styles.connectionBar,
+          connectedDevice ? styles.connectedBar : styles.disconnectedBar,
+        ]}
+      >
         {connectedDevice ? (
           <>
             <Text style={styles.connectionText}>✅ Connected</Text>
             <Text style={styles.connectionSubText}>Battery: {batteryVal}%</Text>
-            <TouchableOpacity style={styles.disconnectButtonSmall} onPress={disconnectFromDevice}>
+            <TouchableOpacity
+              style={styles.disconnectButtonSmall}
+              onPress={handleDisconnect}
+            >
               <Text style={styles.disconnectText}>Disconnect</Text>
             </TouchableOpacity>
           </>
         ) : (
           <>
             <Text style={styles.connectionText}>❌ Not Connected</Text>
-            <TouchableOpacity style={styles.connectButtonSmall} onPress={openDeviceModal}>
+            <TouchableOpacity
+              style={styles.connectButtonSmall}
+              onPress={openDeviceModal}
+            >
               <Text style={styles.connectText}>Connect</Text>
             </TouchableOpacity>
           </>
@@ -137,6 +201,16 @@ export default function LiveScreen() {
 
       {connectedDevice ? (
         <>
+          {/* STATUS */}
+          <Text
+            style={[
+              styles.statusText,
+              isGlucoseRunning ? styles.statusOn : styles.statusOff,
+            ]}
+          >
+            {isGlucoseRunning ? "● Glucose ACTIVE" : "● Glucose STOPPED"}
+          </Text>
+
           {/* FREQUENCY DISPLAY */}
           <Text style={styles.freqLabel}>Frequency (Hz)</Text>
           <View style={styles.roundBox}>
@@ -170,28 +244,45 @@ export default function LiveScreen() {
                   })
                 }
               />
-              <VictoryScatter size={3} style={{ data: { fill: "#8b0000" } }} data={safeData} />
+              <VictoryScatter
+                size={3}
+                style={{ data: { fill: "#8b0000" } }}
+                data={safeData}
+              />
             </VictoryChart>
           </View>
 
           {/* GLUCOSE BUTTONS */}
           <View style={styles.buttonRow}>
-            <TouchableOpacity style={styles.button} onPress={startGlucose}>
+            <TouchableOpacity
+              style={[
+                styles.button,
+                isGlucoseRunning && styles.buttonDisabled,
+              ]}
+              onPress={startGlucose}
+              disabled={isGlucoseRunning}
+            >
               <Text style={styles.buttonText}>Start Glucose</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={stopGlucose}>
+            <TouchableOpacity
+              style={[
+                styles.button,
+                !isGlucoseRunning && styles.buttonDisabled,
+              ]}
+              onPress={stopGlucose}
+              disabled={!isGlucoseRunning}
+            >
               <Text style={styles.buttonText}>Stop Glucose</Text>
             </TouchableOpacity>
           </View>
-
         </>
       ) : null}
 
       <DeviceModal
         closeModal={() => setModalVisible(false)}
         visible={modalVisible}
-        connectToPeripheral={connectToDevice}   // ✔ correct
+        connectToPeripheral={connectToDevice}
         devices={allDevices}
       />
     </View>
@@ -199,7 +290,12 @@ export default function LiveScreen() {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "white", alignItems: "center", paddingTop: 10 },
+  container: {
+    flex: 1,
+    backgroundColor: "white",
+    alignItems: "center",
+    paddingTop: 10,
+  },
   logo: { width: 102, height: 32, marginBottom: 6 },
 
   // Connection Bar
@@ -211,24 +307,64 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     paddingVertical: 12,
   },
-  connectedBar: { backgroundColor: "#d0f5d0", borderBottomWidth: 2, borderColor: "green" },
-  disconnectedBar: { backgroundColor: "#ffd6d6", borderBottomWidth: 2, borderColor: "red" },
+  connectedBar: {
+    backgroundColor: "#d0f5d0",
+    borderBottomWidth: 2,
+    borderColor: "green",
+  },
+  disconnectedBar: {
+    backgroundColor: "#ffd6d6",
+    borderBottomWidth: 2,
+    borderColor: "red",
+  },
   connectionText: { fontSize: 18, fontWeight: "bold" },
   connectionSubText: { fontSize: 16, fontWeight: "500" },
-  connectButtonSmall: { backgroundColor: "dodgerblue", paddingVertical: 6, paddingHorizontal: 14, borderRadius: 6 },
-  disconnectButtonSmall: { backgroundColor: "red", paddingVertical: 6, paddingHorizontal: 14, borderRadius: 6 },
+  connectButtonSmall: {
+    backgroundColor: "dodgerblue",
+    paddingVertical: 6,
+    paddingHorizontal: 14,
+    borderRadius: 6,
+  },
+  disconnectButtonSmall: {
+    backgroundColor: "red",
+    paddingVertical: 6,
+    paddingHorizontal: 14,
+    borderRadius: 6,
+  },
   connectText: { color: "white", fontSize: 16, fontWeight: "600" },
   disconnectText: { color: "white", fontSize: 16, fontWeight: "600" },
 
+  // ✅ status label
+  statusText: { marginTop: 10, fontSize: 16, fontWeight: "700" },
+  statusOn: { color: "green" },
+  statusOff: { color: "red" },
+
   // Frequency Label
-  freqLabel: { fontSize: 28, fontWeight: "bold", marginTop: 15, color: "blue" },
-  roundBox: { width: 120, height: 120, borderRadius: 60, backgroundColor: "lightblue", justifyContent: "center", marginTop: 5 },
-  freqValue: { fontSize: 42, fontWeight: "bold", textAlign: "center", color: "white" },
+  freqLabel: {
+    fontSize: 28,
+    fontWeight: "bold",
+    marginTop: 15,
+    color: "blue",
+  },
+  roundBox: {
+    width: 120,
+    height: 120,
+    borderRadius: 60,
+    backgroundColor: "lightblue",
+    justifyContent: "center",
+    marginTop: 5,
+  },
+  freqValue: {
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    color: "white",
+  },
 
   // Graph
   chartContainer: { marginTop: 10, backgroundColor: "lightblue", borderRadius: 8 },
 
-  // Buttons (shared style)
+  // Buttons
   buttonRow: { flexDirection: "row", marginTop: 20 },
   button: {
     backgroundColor: "lightblue",
@@ -236,6 +372,9 @@ const styles = StyleSheet.create({
     paddingHorizontal: 22,
     borderRadius: 8,
     marginHorizontal: 10,
+  },
+  buttonDisabled: {
+    opacity: 0.5,
   },
   buttonText: { color: "white", fontSize: 18, fontWeight: "bold" },
 });

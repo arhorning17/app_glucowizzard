@@ -5,6 +5,7 @@ import * as ExpoDevice from "expo-device";
 import * as FileSystem from "expo-file-system";
 import base64 from "react-native-base64";
 import { saveDataToDB } from "./src/database";
+import { Alert } from "react-native";
 
 const GLUCOWIZZARD_UUID = "6E400001-B5A3-F393-E0A9-E50E24DCCA9E";
 const GLUCOWIZZARD_READ_CHARACTERISTIC =
@@ -78,6 +79,12 @@ function useBLE() {
   const csvPathRef = useRef<string | null>(null);
   const transferStartRef = useRef<number | null>(null);
   const lastFreqUiUpdateRef = useRef<number>(0);
+
+  const [disconnectEvent, setDisconnectEvent] = useState(0);
+  const [disconnectMessage, setDisconnectMessage] = useState<string | null>(null);
+  const disconnectSubRef = useRef<{ remove: () => void } | null>(null);
+
+  const clearDeviceList = () => setAllDevices([]);
 
   // Keep a handle to the subscription so we can clean up if needed
   const monitorSubRef = useRef<ReturnType<
@@ -214,6 +221,7 @@ function useBLE() {
 
         // Decode base64 (required)
         const decoded = base64.decode(characteristic.value);
+        console.log(decoded);
 
         // 1) Header/EOF are slash-4 packets; detect fast
         const flag = parseSlash4Flag(decoded);
@@ -229,6 +237,8 @@ function useBLE() {
           if (start) {
             const durationSec = ((Date.now() - start) / 1000).toFixed(2);
             console.log(`📁 File transfer completed in ${durationSec} seconds`);
+            Alert.alert("File transfer completed.")
+            
           }
           transferStartRef.current = null;
 
@@ -270,18 +280,6 @@ function useBLE() {
           const secondStr = decoded.slice(comma + 1).trim();
           const v = Number(secondStr);
 
-          // Heuristic: freq packets are typically high (50..5000) and might arrive during live mode.
-          // If this is a file dump, glucose likely 40..400. We'll route accordingly.
-          if (Number.isFinite(v) && v > 50 && v < 5000 && decoded.length < 32) {
-            // Throttle UI updates to avoid slowing BLE stream
-            const now = Date.now();
-            if (shouldUpdate(now, lastFreqUiUpdateRef.current, 500)) {
-              lastFreqUiUpdateRef.current = now;
-              setFreqRate(decoded);
-            }
-            return;
-          }
-
           pushFileRow(decoded);
           return;
         }
@@ -300,9 +298,39 @@ function useBLE() {
 
       const deviceConnection = await bleManager.connectToDevice(device.id);
       console.log("Connected to device");
+      Alert.alert("Connection Success", "Device successfully connected.")
 
       await deviceConnection.discoverAllServicesAndCharacteristics();
       console.log("Services discovered");
+
+      // Remove any previous disconnect listener
+    try {
+      disconnectSubRef.current?.remove?.();
+    } catch {}
+    disconnectSubRef.current = null;
+
+    // Listen for unexpected disconnects
+    disconnectSubRef.current = bleManager.onDeviceDisconnected(
+      deviceConnection.id,
+      (error) => {
+        console.log("🔌 Disconnected:", error?.message);
+
+        // stop notifications subscription too
+        try {
+          monitorSubRef.current?.remove?.();
+        } catch {}
+        monitorSubRef.current = null;
+
+        setConnectedDevice(null);
+        setFreqRate("0/0/0/0");
+        setAllDevices([]);
+
+        setDisconnectMessage(
+          error?.message ? `Device disconnected: ${error.message}` : "Device disconnected."
+        );
+        setDisconnectEvent((n) => n + 1);
+      }
+    );
 
       // MTU (Android)
       try {
@@ -345,6 +373,7 @@ function useBLE() {
       await sendDataToDevice(deviceConnection, "1116");
     } catch (e) {
       console.log("FAILED TO CONNECT:", e);
+      Alert.alert("FAILED TO CONNECT.")
     }
   };
 
@@ -369,12 +398,22 @@ function useBLE() {
 
   const disconnectFromDevice = () => {
     if (connectedDevice) {
+      // stop BLE notification monitor
       try {
         monitorSubRef.current?.remove?.();
       } catch {}
+      monitorSubRef.current = null;
+  
+      // stop disconnect listener
+      try {
+        disconnectSubRef.current?.remove?.();
+      } catch {}
+      disconnectSubRef.current = null;
+  
       bleManager.cancelDeviceConnection(connectedDevice.id);
       setConnectedDevice(null);
       setFreqRate("0/0/0/0");
+      setAllDevices([]);
     }
   };
 

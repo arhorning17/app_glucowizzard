@@ -29,21 +29,6 @@ export default function SettingsScreen() {
   const [clinicalSite, setClinicalSite] = useState("");
   const [dayNumber, setDayNumber] = useState("");
 
-  // LED State
-  const [ledCenterMode, setLedCenterMode] = useState(false);
-
-  const { sendDataToDevice } = useBLEContext();
-
-  const toggleLED = () => {
-    setLedCenterMode(!ledCenterMode);
-
-    if (!connectedDevice) return;
-
-    sendDataToDevice(
-      connectedDevice,
-      ledCenterMode ? AllLED : CenterLED
-    );
-  };
 
   return (
     <View style={styles.container}>
@@ -134,22 +119,6 @@ export default function SettingsScreen() {
           <Text style={styles.fullWidthButtonText}>Open Alignment Mode</Text>
         </TouchableOpacity>
 
-        {/* LED Toggle */}
-        <View style={[styles.ledRow, { marginTop: 18 }]}>
-          <View style={{ flexDirection: "row", alignItems: "center" }}>
-            <Ionicons
-              name="bulb-outline"
-              size={22}
-              color="#003B7A"
-              style={{ marginRight: 6 }}
-            />
-            <Text style={styles.ledLabel}>
-              {ledCenterMode ? "Center LED" : "All LEDs"}
-            </Text>
-          </View>
-
-          <Switch value={ledCenterMode} onValueChange={toggleLED} />
-        </View>
       </View>
     </View>
   );
@@ -241,18 +210,5 @@ const styles = StyleSheet.create({
     color: "white",
     fontWeight: "700",
     fontSize: 16,
-  },
-
-  // LED
-  ledRow: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-  },
-
-  ledLabel: {
-    fontSize: 16,
-    fontWeight: "600",
-    color: "#003B7A",
   },
 });
