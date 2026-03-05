@@ -17,33 +17,39 @@ import {
 } from "victory-native";
 
 import { useBLEContext } from "../BLEContext";
-import { saveDataToDB, readDataFromDB } from "../src/database";
 
 export default function AlignmentScreen({ navigation }) {
   const { connectedDevice, sendDataToDevice, freqRate } = useBLEContext();
 
-  // BLE values (same parsing as LiveScreen)
-  let glucoseVal = 0;
+  // ✅ Parse BLE string like: "2036/0/0"
+  // We'll plot the FIRST field (2036) as the alignment value.
+  let alignmentVal = NaN;
   let batteryVal = 0;
 
-  if (freqRate && freqRate.includes("/")) {
+  if (typeof freqRate === "string" && freqRate.includes("/")) {
     const parts = freqRate.split("/");
-    glucoseVal = Number(parts[1]) || 0;
-    batteryVal = Number(parts[2]) || 0;
+    alignmentVal = Number(parts[0]); // ✅ FIX: was parts[1]
+    batteryVal = Number(parts[2]) || 0; // keep if you want, but logs show 0
   }
 
-  // ✅ Track alignment running (same style as LiveScreen)
+  // Track alignment running
   const [isAlignmentRunning, setIsAlignmentRunning] = useState(false);
-
-  // If device disconnects, reset states
-  useEffect(() => {
-    if (!connectedDevice) {
-      setIsAlignmentRunning(false);
-    }
-  }, [connectedDevice]);
 
   // LED state
   const [ledCenterMode, setLedCenterMode] = useState(false);
+
+  // Graph state (LIVE ONLY)
+  type DataPoint = { x: number; y: number };
+  const [data, setData] = useState<DataPoint[]>([]);
+  const WINDOW_MS = 3 * 60 * 1000; // 3 minutes
+
+  // If device disconnects, reset states + clear live data
+  useEffect(() => {
+    if (!connectedDevice) {
+      setIsAlignmentRunning(false);
+      setData([]);
+    }
+  }, [connectedDevice]);
 
   const toggleLED = () => {
     if (!connectedDevice) {
@@ -57,61 +63,34 @@ export default function AlignmentScreen({ navigation }) {
     const AllLED = "1114";
     const CenterLED = "1115";
 
-    // ✅ use the NEXT value (fixes the old-state bug)
     sendDataToDevice(connectedDevice, next ? CenterLED : AllLED);
   };
 
-  // Alignment graph state (same as Live)
-  type DataPoint = { x: number; y: number };
-  const [data, setData] = useState<DataPoint[]>([]);
-  const [now, setNow] = useState(Date.now());
-  const WINDOW_MS = 3 * 60 * 1000; // 3 minutes
-
-  // Load initial stored values
+  // ✅ Append new BLE points (LIVE ONLY, no DB)
   useEffect(() => {
-    readDataFromDB((rows) => {
-      if (!rows) return;
-      const formatted = rows.map((r: any) => ({
-        x: new Date(r.time).getTime(),
-        y: Number(r.glucoseLevel),
-      }));
-      setData(formatted.slice(-500));
+    if (!connectedDevice) return;
+    if (!Number.isFinite(alignmentVal)) return; // skip only NaN/Infinity
+
+    const t = Date.now();
+    const point = { x: t, y: alignmentVal };
+
+    setData((prev) => {
+      const next = [...prev, point];
+      const cutoff = t - WINDOW_MS;
+      const pruned = next.filter((p) => p.x >= cutoff);
+      return pruned.length > 800 ? pruned.slice(pruned.length - 800) : pruned;
     });
-  }, []);
-
-  // Live graph scroll
-  useEffect(() => {
-    const interval = setInterval(() => setNow(Date.now()), 300);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Add new BLE data like LiveScreen
-  useEffect(() => {
-    if (!connectedDevice || !Number.isFinite(glucoseVal)) return;
-
-    saveDataToDB({
-      time: new Date().toISOString(),
-      glucoseLevel: glucoseVal,
-      batteryLevel: batteryVal?.toString() || "",
-    });
-
-    readDataFromDB((rows) => {
-      if (!rows) return;
-      const formatted = rows.map((r: any) => ({
-        x: new Date(r.time).getTime(),
-        y: Number(r.glucoseLevel),
-      }));
-      setData(formatted.slice(-500));
-    });
-  }, [glucoseVal, connectedDevice]);
+  }, [alignmentVal, connectedDevice]);
 
   const safeData = data.filter(
     (p) => Number.isFinite(p.x) && Number.isFinite(p.y)
   );
-  const lastX = safeData.length ? safeData[safeData.length - 1].x : now;
-  const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
 
-  // Commands (same UX pattern as LiveScreen)
+  // ✅ window follows latest DATA point
+  const lastX = safeData.length ? safeData[safeData.length - 1].x : Date.now();
+  const domainX = [lastX - WINDOW_MS, lastX];
+
+  // Commands
   const startAlignment = () => {
     if (!connectedDevice) {
       Alert.alert("Not Connected", "Connect to the device first.");
@@ -122,6 +101,7 @@ export default function AlignmentScreen({ navigation }) {
       return;
     }
 
+    setData([]);
     sendDataToDevice(connectedDevice, "1112");
     setIsAlignmentRunning(true);
     Alert.alert("Alignment Started", "✅ Alignment mode is now ACTIVE.");
@@ -149,7 +129,10 @@ export default function AlignmentScreen({ navigation }) {
             (async () => {
               await sendDataToDevice(connectedDevice, "1113");
               setIsAlignmentRunning(false);
-              Alert.alert("Alignment Stopped", "🛑 Alignment mode is now STOPPED.");
+              Alert.alert(
+                "Alignment Stopped",
+                "🛑 Alignment mode is now STOPPED."
+              );
             })();
           },
         },
@@ -175,7 +158,6 @@ export default function AlignmentScreen({ navigation }) {
         </Text>
         <Text style={styles.statusText}>Battery: {batteryVal}%</Text>
 
-        {/* ✅ Alignment status label like LiveScreen */}
         <Text
           style={[
             styles.alignStatus,
@@ -184,13 +166,18 @@ export default function AlignmentScreen({ navigation }) {
         >
           {isAlignmentRunning ? "● Alignment ACTIVE" : "● Alignment STOPPED"}
         </Text>
+
+        {/* optional: debug on-screen */}
+        <Text style={[styles.statusText, { marginTop: 6 }]}>
+          Latest: {Number.isFinite(alignmentVal) ? alignmentVal : "--"}
+        </Text>
       </View>
 
       {/* GRAPH */}
       <View style={styles.chartContainer}>
         <VictoryChart
           scale={{ x: "time" }}
-          domain={{ x: domainX, y: [0, 500] }}
+          domain={{ x: domainX, y: [0, 500] }} 
           padding={{ top: 30, bottom: 50, right: 20, left: 60 }}
           width={Dimensions.get("window").width - 10}
           height={450}
@@ -198,7 +185,7 @@ export default function AlignmentScreen({ navigation }) {
         >
           <VictoryAxis
             dependentAxis
-            label="Frequency (Hz)"
+            label="Alignment"
             style={{
               axisLabel: { padding: 40, fontSize: 16, fill: "black" },
               tickLabels: { fontSize: 12 },
@@ -290,7 +277,6 @@ const styles = StyleSheet.create({
     color: "#003B7A",
   },
 
-  // ✅ alignment status label (like Live)
   alignStatus: { marginTop: 8, fontSize: 16, fontWeight: "700" },
   statusOn: { color: "green" },
   statusOff: { color: "red" },

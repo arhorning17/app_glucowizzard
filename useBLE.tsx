@@ -264,11 +264,17 @@ function useBLE() {
         }
 
         // 2) Live packet: "ts/glucose/battery"
-        // Avoid split unless needed
         if (decoded.indexOf("/") !== -1) {
-          // If it's not slash4, it's likely slash3 live
-          // Push row fast (manual slicing)
+          // Keep buffering for file/DB pipeline if you want
           pushLiveRow(decoded);
+
+          // ✅ IMPORTANT: update context state so screens re-render
+          const now = Date.now();
+          if (shouldUpdate(now, lastFreqUiUpdateRef.current, 150)) {
+            lastFreqUiUpdateRef.current = now;
+            setFreqRate(decoded);
+          }
+
           return;
         }
 
