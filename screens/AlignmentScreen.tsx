@@ -28,7 +28,7 @@ export default function AlignmentScreen({ navigation }) {
 
   if (typeof freqRate === "string" && freqRate.includes("/")) {
     const parts = freqRate.split("/");
-    alignmentVal = Number(parts[0]); // ✅ FIX: was parts[1]
+    alignmentVal = Number(parts[1]); // ✅ FIX: was parts[1]
     batteryVal = Number(parts[2]) || 0; // keep if you want, but logs show 0
   }
 
@@ -177,7 +177,7 @@ export default function AlignmentScreen({ navigation }) {
       <View style={styles.chartContainer}>
         <VictoryChart
           scale={{ x: "time" }}
-          domain={{ x: domainX, y: [0, 500] }} 
+          domain={{ x: domainX, y: [500, 5000] }} 
           padding={{ top: 30, bottom: 50, right: 20, left: 60 }}
           width={Dimensions.get("window").width - 10}
           height={450}

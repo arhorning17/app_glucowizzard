@@ -221,7 +221,7 @@ export default function LiveScreen() {
           <View style={styles.chartContainer}>
             <VictoryChart
               scale={{ x: "time" }}
-              domain={{ x: domainX, y: [0, 500] }}
+              domain={{ x: domainX, y: [500, 1500] }}
               padding={{ top: 30, bottom: 50, right: 20, left: 60 }}
               width={Dimensions.get("window").width - 10}
               height={450}
