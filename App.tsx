@@ -11,6 +11,8 @@ import HistoryScreen from "./screens/HistoryScreen";
 import LoginScreen from "./screens/LoginScreen";
 import SettingsScreen from "./screens/SettingsScreen";
 import AlignmentScreen from "./screens/AlignmentScreen";
+import TermsScreen from "./screens/TermsScreen";
+import DeviceConnectionScreen from "./screens/DeviceConnectionScreen";
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -52,11 +54,13 @@ export default function App() {
   return (
     <BLEProvider>
       <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }}>
-          <Stack.Screen name="Login" component={LoginScreen} />
-          <Stack.Screen name="Main" component={MainTabs} />
-          <Stack.Screen name="Alignment" component={AlignmentScreen} />
-        </Stack.Navigator>
+      <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Terms" component={TermsScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="DeviceConnection" component={DeviceConnectionScreen} />
+        <Stack.Screen name="Alignment" component={AlignmentScreen} />
+        <Stack.Screen name="Main" component={MainTabs} />
+      </Stack.Navigator>
       </NavigationContainer>
     </BLEProvider>
   );

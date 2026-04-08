@@ -86,29 +86,66 @@ export default function LiveScreen() {
   }, []);
 
   // Save new glucose readings
+  // Save new glucose readings
   useEffect(() => {
-    if (!connectedDevice || !Number.isFinite(glucoseVal)) return;
+    if (!connectedDevice) return;
+    if (!isGlucoseRunning) return;
+    if (typeof freqRate !== "string" || !freqRate.includes("/")) return;
+
+    const parts = freqRate.split("/");
+    const nextGlucoseVal = Number(parts[1]);
+    const nextBatteryVal = Number(parts[2]) || 0;
+
+    if (!Number.isFinite(nextGlucoseVal)) return;
 
     saveDataToDB({
       time: new Date().toISOString(),
-      glucoseLevel: glucoseVal,
-      batteryLevel: batteryVal?.toString() || "",
+      glucoseLevel: nextGlucoseVal,
+      batteryLevel: nextBatteryVal.toString(),
     });
 
     readDataFromDB((rows) => {
+      if (!rows) return;
+
       const formatted = rows.map((r: any) => ({
         x: new Date(r.time).getTime(),
         y: Number(r.glucoseLevel),
       }));
+
       setData(formatted.slice(-500));
     });
-  }, [glucoseVal, connectedDevice]);
+  }, [freqRate, connectedDevice, isGlucoseRunning]);
 
   const safeData = data.filter(
     (p) => Number.isFinite(p.x) && Number.isFinite(p.y)
   );
+
   const lastX = safeData.length ? safeData[safeData.length - 1].x : now;
   const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
+
+  // Auto-scale Y based on visible data
+  const visibleData = safeData.filter(
+    (p) => p.x >= domainX[0] && p.x <= domainX[1]
+  );
+
+  const yValues = visibleData.map((p) => p.y);
+
+  let yMin = 0;
+  let yMax = 100;
+
+  if (yValues.length > 0) {
+    const minVal = Math.min(...yValues);
+    const maxVal = Math.max(...yValues);
+
+    if (minVal === maxVal) {
+      yMin = Math.max(0, minVal - 20);
+      yMax = maxVal + 20;
+    } else {
+      const padding = Math.max((maxVal - minVal) * 0.1, 20);
+      yMin = Math.max(0, minVal - padding);
+      yMax = maxVal + padding;
+    }
+  }
 
   // Commands
   const startGlucose = () => {
@@ -160,6 +197,11 @@ export default function LiveScreen() {
     disconnectFromDevice();
     Alert.alert("Disconnected", "Device disconnected.");
   };
+
+  const currentDate = new Date(lastX).toLocaleDateString([], {
+    month: "short",
+    day: "numeric",
+  });
 
   return (
     <View style={styles.container}>
@@ -219,9 +261,10 @@ export default function LiveScreen() {
 
           {/* GRAPH */}
           <View style={styles.chartContainer}>
+            <Text style={styles.dateOverlay}>{currentDate}</Text>
             <VictoryChart
               scale={{ x: "time" }}
-              domain={{ x: domainX, y: [500, 1500] }}
+              domain={{ x: domainX, y: [yMin, yMax] }}
               padding={{ top: 30, bottom: 50, right: 20, left: 60 }}
               width={Dimensions.get("window").width - 10}
               height={450}
@@ -362,7 +405,22 @@ const styles = StyleSheet.create({
   },
 
   // Graph
-  chartContainer: { marginTop: 10, backgroundColor: "lightblue", borderRadius: 8 },
+  chartContainer: { marginTop: 10, backgroundColor: "lightblue", borderRadius: 8, position: "relative", },
+
+  // date
+  dateOverlay: {
+    position: "absolute",
+    top: 8,
+    right: 10,
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#003B7A",
+    backgroundColor: "rgba(255,255,255,0.8)",
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 6,
+    zIndex: 10,
+  },
 
   // Buttons
   buttonRow: { flexDirection: "row", marginTop: 20 },

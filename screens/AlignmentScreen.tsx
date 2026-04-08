@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import {
   View,
   Text,
@@ -20,6 +20,7 @@ import { useBLEContext } from "../BLEContext";
 
 export default function AlignmentScreen({ navigation }) {
   const { connectedDevice, sendDataToDevice, freqRate } = useBLEContext();
+  const wasConnectedRef = useRef(false);
 
   type DataPoint = { x: number; y: number };
 
@@ -42,9 +43,22 @@ export default function AlignmentScreen({ navigation }) {
 
   useEffect(() => {
     if (!connectedDevice) {
-      setIsAlignmentRunning(false);
-      setData([]);
-      setWindowStart(null);
+      if (wasConnectedRef.current) {
+        // Device was connected before → now disconnected
+        setIsAlignmentRunning(false);
+        setData([]);
+        setWindowStart(null);
+  
+        Alert.alert(
+          "Device Disconnected",
+          "Connection lost. Alignment has been stopped."
+        );
+      }
+  
+      wasConnectedRef.current = false;
+    } else {
+      // Device is connected
+      wasConnectedRef.current = true;
     }
   }, [connectedDevice]);
 
@@ -171,11 +185,16 @@ export default function AlignmentScreen({ navigation }) {
     ]);
   };
 
+  const currentDate = new Date(lastX).toLocaleDateString([], {
+    month: "short",
+    day: "numeric",
+  });
+
   return (
     <View style={styles.container}>
       {/* HEADER */}
       <View style={styles.header}>
-        <TouchableOpacity onPress={() => navigation.goBack()}>
+        <TouchableOpacity onPress={() => navigation.navigate("Main")}>
           <Ionicons name="arrow-back-outline" size={26} color="#003B7A" />
         </TouchableOpacity>
         <Text style={styles.headerTitle}>Alignment Mode</Text>
@@ -209,6 +228,7 @@ export default function AlignmentScreen({ navigation }) {
 
       {/* GRAPH */}
       <View style={styles.chartContainer}>
+        <Text style={styles.dateOverlay}>{currentDate}</Text>
         <VictoryChart
           scale={{ x: "time" }}
           domain={{ x: domainX, y: [yMin, yMax] }}
@@ -370,5 +390,18 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     color: "#003B7A",
+  },
+  dateOverlay: {
+    position: "absolute",
+    top: 8,
+    right: 10,
+    fontSize: 13,
+    fontWeight: "600",
+    color: "#003B7A",
+    backgroundColor: "rgba(255,255,255,0.8)",
+    paddingHorizontal: 6,
+    paddingVertical: 2,
+    borderRadius: 6,
+    zIndex: 10,
   },
 });

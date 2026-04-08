@@ -17,7 +17,7 @@ export default function LoginScreen({ navigation }: any) {
   const [dayNumber, setDayNumber] = useState("");
 
   const handleSignIn = () => {
-    navigation.replace("Main");
+    navigation.navigate("DeviceConnection");
   };
 
   return (
