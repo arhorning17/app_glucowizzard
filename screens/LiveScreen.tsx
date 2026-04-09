@@ -274,8 +274,8 @@ export default function LiveScreen() {
                 dependentAxis
                 label="Frequency (Hz)"
                 style={{
-                  axisLabel: { padding: 40, fontSize: 16, fill: "black" },
-                  tickLabels: { fontSize: 12 },
+                  axisLabel: { padding: 40, fontSize: 20, fill: "black" },
+                  tickLabels: { fontSize: 14 },
                 }}
               />
               <VictoryAxis
@@ -283,7 +283,6 @@ export default function LiveScreen() {
                   new Date(t).toLocaleTimeString([], {
                     hour: "2-digit",
                     minute: "2-digit",
-                    second: "2-digit",
                   })
                 }
               />

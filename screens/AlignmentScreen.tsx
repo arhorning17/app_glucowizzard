@@ -241,8 +241,8 @@ export default function AlignmentScreen({ navigation }) {
             dependentAxis
             label="Alignment"
             style={{
-              axisLabel: { padding: 40, fontSize: 16 },
-              tickLabels: { fontSize: 12 },
+              axisLabel: { padding: 40, fontSize: 20 },
+              tickLabels: { fontSize: 14 },
             }}
           />
           <VictoryAxis
@@ -250,7 +250,6 @@ export default function AlignmentScreen({ navigation }) {
               new Date(t).toLocaleTimeString([], {
                 hour: "2-digit",
                 minute: "2-digit",
-                second: "2-digit",
               })
             }
           />
@@ -382,9 +381,9 @@ const styles = StyleSheet.create({
   ledRow: {
     flexDirection: "row",
     marginTop: 20,
-    justifyContent: "space-between",
-    width: "80%",
+    justifyContent: "center",
     alignItems: "center",
+    gap: 15,
   },
   ledLabel: {
     fontSize: 16,

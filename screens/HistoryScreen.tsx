@@ -58,15 +58,30 @@ export default function HistoryScreen() {
   };
 
   // Clear DB
-  const handleClear = () =>
-    Alert.alert("Confirm", "Clear all stored glucose data?", [
-      { text: "Cancel", style: "cancel" },
-      {
-        text: "Clear",
-        style: "destructive",
-        onPress: () => clearDatabase(() => {}, () => {}),
-      },
-    ]);
+  const handleClear = () => {
+    Alert.alert(
+      "Clear Database",
+      "Are you sure you want to delete all stored data? This cannot be undone.",
+      [
+        { text: "Cancel", style: "cancel" },
+        {
+          text: "Clear",
+          style: "destructive",
+          onPress: () => {
+            clearDatabase(
+              () => {
+                loadHistory(); // refresh graph
+                Alert.alert("Success", "Database cleared.");
+              },
+              () => {
+                Alert.alert("Error", "Failed to clear database.");
+              }
+            );
+          },
+        },
+      ]
+    );
+  };
 
   const safeData = data.filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y));
   const lastX = safeData.length ? safeData[safeData.length - 1].x : Date.now();

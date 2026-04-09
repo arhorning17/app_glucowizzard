@@ -60,9 +60,11 @@ export default function App() {
     <BLEProvider>
       <NavigationContainer>
       <Stack.Navigator screenOptions={{ headerShown: false }}>
+        <Stack.Screen name="Terms" component={TermsScreen} />
         <Stack.Screen name="Login" component={LoginScreen} />
-        <Stack.Screen name="Main" component={MainTabs} />
+        <Stack.Screen name="DeviceConnection" component={DeviceConnectionScreen} />
         <Stack.Screen name="Alignment" component={AlignmentScreen} />
+        <Stack.Screen name="Main" component={MainTabs} />
       </Stack.Navigator>
       </NavigationContainer>
     </BLEProvider>
