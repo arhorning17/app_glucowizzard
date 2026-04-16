@@ -14,6 +14,7 @@ import {
   VictoryScatter,
   VictoryAxis,
   VictoryTheme,
+  VictoryLabel, // ✅ added
 } from "victory-native";
 
 import { useBLEContext } from "../BLEContext";
@@ -29,35 +30,31 @@ export default function AlignmentScreen({ navigation }) {
   const [isAlignmentRunning, setIsAlignmentRunning] = useState(false);
   const [ledCenterMode, setLedCenterMode] = useState(false);
 
-  const WINDOW_MS = 3 * 60 * 1000;
+  const WINDOW_MS = 5 * 60 * 1000;
 
-  // Display only
   let latestAlignmentVal = NaN;
   let batteryVal = 0;
 
   if (typeof freqRate === "string" && freqRate.includes("/")) {
     const parts = freqRate.split("/");
-    latestAlignmentVal = Number(parts[1]); // change to parts[0] if needed
+    latestAlignmentVal = Number(parts[1]);
     batteryVal = Number(parts[2]) || 0;
   }
 
   useEffect(() => {
     if (!connectedDevice) {
       if (wasConnectedRef.current) {
-        // Device was connected before → now disconnected
         setIsAlignmentRunning(false);
         setData([]);
         setWindowStart(null);
-  
+
         Alert.alert(
           "Device Disconnected",
           "Connection lost. Alignment has been stopped."
         );
       }
-  
       wasConnectedRef.current = false;
     } else {
-      // Device is connected
       wasConnectedRef.current = true;
     }
   }, [connectedDevice]);
@@ -70,18 +67,16 @@ export default function AlignmentScreen({ navigation }) {
 
     const next = !ledCenterMode;
     setLedCenterMode(next);
-
     sendDataToDevice(connectedDevice, next ? "1115" : "1114");
   };
 
-  // Add point every BLE packet
   useEffect(() => {
     if (!connectedDevice) return;
     if (!isAlignmentRunning) return;
     if (typeof freqRate !== "string" || !freqRate.includes("/")) return;
 
     const parts = freqRate.split("/");
-    const alignmentVal = Number(parts[1]); // change to parts[0] if needed
+    const alignmentVal = Number(parts[1]);
 
     if (!Number.isFinite(alignmentVal)) return;
 
@@ -89,7 +84,6 @@ export default function AlignmentScreen({ navigation }) {
 
     setData((prev) => {
       const next = [...prev, { x: t, y: alignmentVal }];
-
       const cutoff = t - WINDOW_MS - 5000;
       const pruned = next.filter((p) => p.x >= cutoff);
 
@@ -104,6 +98,8 @@ export default function AlignmentScreen({ navigation }) {
   const safeData = data.filter(
     (p) => Number.isFinite(p.x) && Number.isFinite(p.y)
   );
+
+  const latestPoint = safeData.length ? safeData[safeData.length - 1] : null; // ✅ added
 
   const now = Date.now();
   const effectiveStart = windowStart ?? now;
@@ -120,7 +116,6 @@ export default function AlignmentScreen({ navigation }) {
     domainX = [left, lastX];
   }
 
-  // Auto-scale Y but never below 0
   const visibleData = safeData.filter(
     (p) => p.x >= domainX[0] && p.x <= domainX[1]
   );
@@ -201,20 +196,19 @@ export default function AlignmentScreen({ navigation }) {
         <View style={{ width: 26 }} />
       </View>
 
-      {/* STATUS */}
-      <View style={styles.statusBar}>
-        <Text style={styles.statusText}>
-          {connectedDevice ? "✅ Connected" : "❌ Not Connected"}
-        </Text>
-        <Text style={styles.statusText}>Battery: {batteryVal}%</Text>
-
+      {/* TOP ROW */}
+      <View style={styles.topRow}>
         <Text
           style={[
-            styles.alignStatus,
-            isAlignmentRunning ? styles.statusOn : styles.statusOff,
+            styles.connectionText,
+            connectedDevice ? styles.connected : styles.disconnected,
           ]}
         >
-          {isAlignmentRunning ? "● Alignment ACTIVE" : "● Alignment STOPPED"}
+          {connectedDevice ? "● Connected" : "● Not Connected"}
+        </Text>
+
+        <Text style={styles.batteryText}>
+          Battery: {connectedDevice ? `${batteryVal}%` : "--"}
         </Text>
       </View>
 
@@ -229,6 +223,7 @@ export default function AlignmentScreen({ navigation }) {
       {/* GRAPH */}
       <View style={styles.chartContainer}>
         <Text style={styles.dateOverlay}>{currentDate}</Text>
+
         <VictoryChart
           scale={{ x: "time" }}
           domain={{ x: domainX, y: [yMin, yMax] }}
@@ -253,7 +248,41 @@ export default function AlignmentScreen({ navigation }) {
               })
             }
           />
+
           <VictoryScatter data={safeData} size={3} />
+
+          {/* ✅ latest point label */}
+          {latestPoint && (
+            <VictoryScatter
+              data={[latestPoint]}
+              size={6}
+              style={{ data: { fill: "#007AFF" } }}
+              labels={({ datum }) => `${datum.y}`}
+              labelComponent={
+                <VictoryLabel
+                  dx={0}
+                  dy={-16}
+                  textAnchor="middle"
+                  style={{
+                    fontSize: 12,
+                    fill: "black",
+                    fontWeight: "bold",
+                  }}
+                  backgroundStyle={{
+                    fill: "white",
+                    stroke: "#007AFF",
+                    strokeWidth: 1,
+                  }}
+                  backgroundPadding={{
+                    top: 4,
+                    bottom: 4,
+                    left: 6,
+                    right: 6,
+                  }}
+                />
+              }
+            />
+          )}
         </VictoryChart>
       </View>
 
@@ -283,6 +312,16 @@ export default function AlignmentScreen({ navigation }) {
         </Text>
         <Switch value={ledCenterMode} onValueChange={toggleLED} />
       </View>
+
+      {/* ALIGNMENT STATUS */}
+      <Text
+        style={[
+          styles.alignStatus,
+          isAlignmentRunning ? styles.statusOn : styles.statusOff,
+        ]}
+      >
+        {isAlignmentRunning ? "● Alignment ACTIVE" : "● Alignment STOPPED"}
+      </Text>
     </View>
   );
 }
@@ -308,28 +347,23 @@ const styles = StyleSheet.create({
     color: "#003B7A",
   },
 
-  statusBar: {
+  topRow: {
     width: "92%",
-    backgroundColor: "#E2F1FF",
-    padding: 10,
-    borderRadius: 10,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    marginBottom: 10,
   },
 
-  statusText: {
+  connectionText: {
+    fontSize: 16,
+    fontWeight: "700",
+  },
+  connected: { color: "green" },
+  disconnected: { color: "red" },
+
+  batteryText: {
     fontSize: 16,
     fontWeight: "600",
-    color: "#003B7A",
-  },
-  alignStatus: {
-    marginTop: 8,
-    fontWeight: "700",
-    fontSize: 16,
-  },
-  statusOn: {
-    color: "green",
-  },
-  statusOff: {
-    color: "red",
   },
 
   alignmentLabel: {
@@ -390,6 +424,7 @@ const styles = StyleSheet.create({
     fontWeight: "600",
     color: "#003B7A",
   },
+
   dateOverlay: {
     position: "absolute",
     top: 8,
@@ -402,5 +437,19 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
     borderRadius: 6,
     zIndex: 10,
+  },
+  alignStatus: {
+    marginTop: 12,
+    fontWeight: "700",
+    fontSize: 16,
+    textAlign: "center",
+  },
+  
+  statusOn: {
+    color: "green",
+  },
+  
+  statusOff: {
+    color: "red",
   },
 });

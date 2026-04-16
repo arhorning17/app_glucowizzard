@@ -14,6 +14,7 @@ import {
   VictoryScatter,
   VictoryAxis,
   VictoryTheme,
+  VictoryLabel, // ✅ added
 } from "victory-native";
 
 import { useBLEContext } from "../BLEContext";
@@ -33,7 +34,6 @@ export default function LiveScreen() {
     sendDataToDevice,
   } = useBLEContext();
 
-  // Modal state for BLE device scanning
   const [modalVisible, setModalVisible] = useState(false);
   const openDeviceModal = async () => {
     const ok = await requestPermissions();
@@ -41,10 +41,8 @@ export default function LiveScreen() {
     setModalVisible(true);
   };
 
-  // ✅ Track which button state is active
   const [isGlucoseRunning, setIsGlucoseRunning] = useState(false);
 
-  // If device disconnects, reset button state
   useEffect(() => {
     if (!connectedDevice) {
       setIsGlucoseRunning(false);
@@ -60,13 +58,11 @@ export default function LiveScreen() {
     batteryVal = Number(parts[2]) || 0;
   }
 
-  // Graph state
   type DataPoint = { x: number; y: number };
   const [data, setData] = useState<DataPoint[]>([]);
   const [now, setNow] = useState(Date.now());
-  const WINDOW_MS = 3 * 60 * 1000;
+  const WINDOW_MS = 30 * 60 * 1000;
 
-  // Load saved data
   useEffect(() => {
     initDB();
     readDataFromDB((rows) => {
@@ -79,14 +75,11 @@ export default function LiveScreen() {
     });
   }, []);
 
-  // Live scrolling
   useEffect(() => {
     const interval = setInterval(() => setNow(Date.now()), 300);
     return () => clearInterval(interval);
   }, []);
 
-  // Save new glucose readings
-  // Save new glucose readings
   useEffect(() => {
     if (!connectedDevice) return;
     if (!isGlucoseRunning) return;
@@ -123,7 +116,6 @@ export default function LiveScreen() {
   const lastX = safeData.length ? safeData[safeData.length - 1].x : now;
   const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
 
-  // Auto-scale Y based on visible data
   const visibleData = safeData.filter(
     (p) => p.x >= domainX[0] && p.x <= domainX[1]
   );
@@ -147,7 +139,6 @@ export default function LiveScreen() {
     }
   }
 
-  // Commands
   const startGlucose = () => {
     if (!connectedDevice) {
       Alert.alert("Not Connected", "Connect to the device first.");
@@ -172,7 +163,7 @@ export default function LiveScreen() {
       Alert.alert("Already Stopped", "Glucose streaming is already stopped.");
       return;
     }
-  
+
     Alert.alert(
       "Stop Glucose Streaming",
       "Are you sure you want to stop glucose streaming?",
@@ -191,7 +182,6 @@ export default function LiveScreen() {
     );
   };
 
-  // Wrap disconnect so we reset state + alert
   const handleDisconnect = () => {
     setIsGlucoseRunning(false);
     disconnectFromDevice();
@@ -203,65 +193,46 @@ export default function LiveScreen() {
     day: "numeric",
   });
 
+  const latestPoint = safeData.length ? safeData[safeData.length - 1] : null; // ✅ added
+
   return (
     <View style={styles.container}>
       <StatusBar backgroundColor="lightblue" />
 
-      {/* LOGO */}
       <Image source={require("../Images/logo.jpg")} style={styles.logo} />
 
-      {/* CONNECTION BAR */}
-      <View
-        style={[
-          styles.connectionBar,
-          connectedDevice ? styles.connectedBar : styles.disconnectedBar,
-        ]}
-      >
+      <View style={styles.topRow}>
         {connectedDevice ? (
-          <>
-            <Text style={styles.connectionText}>✅ Connected</Text>
-            <Text style={styles.connectionSubText}>Battery: {batteryVal}%</Text>
-            <TouchableOpacity
-              style={styles.disconnectButtonSmall}
-              onPress={handleDisconnect}
-            >
-              <Text style={styles.disconnectText}>Disconnect</Text>
-            </TouchableOpacity>
-          </>
+          <TouchableOpacity
+            style={styles.disconnectButtonSmall}
+            onPress={handleDisconnect}
+          >
+            <Text style={styles.disconnectText}>Disconnect</Text>
+          </TouchableOpacity>
         ) : (
-          <>
-            <Text style={styles.connectionText}>❌ Not Connected</Text>
-            <TouchableOpacity
-              style={styles.connectButtonSmall}
-              onPress={openDeviceModal}
-            >
-              <Text style={styles.connectText}>Connect</Text>
-            </TouchableOpacity>
-          </>
+          <TouchableOpacity
+            style={styles.connectButtonSmall}
+            onPress={openDeviceModal}
+          >
+            <Text style={styles.connectText}>Connect</Text>
+          </TouchableOpacity>
         )}
+
+        <Text style={styles.batteryText}>
+          Battery: {connectedDevice ? `${batteryVal}%` : "--"}
+        </Text>
       </View>
 
       {connectedDevice ? (
         <>
-          {/* STATUS */}
-          <Text
-            style={[
-              styles.statusText,
-              isGlucoseRunning ? styles.statusOn : styles.statusOff,
-            ]}
-          >
-            {isGlucoseRunning ? "● Glucose ACTIVE" : "● Glucose STOPPED"}
-          </Text>
-
-          {/* FREQUENCY DISPLAY */}
           <Text style={styles.freqLabel}>Frequency (Hz)</Text>
           <View style={styles.roundBox}>
             <Text style={styles.freqValue}>{glucoseVal || 0}</Text>
           </View>
 
-          {/* GRAPH */}
           <View style={styles.chartContainer}>
             <Text style={styles.dateOverlay}>{currentDate}</Text>
+
             <VictoryChart
               scale={{ x: "time" }}
               domain={{ x: domainX, y: [yMin, yMax] }}
@@ -286,15 +257,47 @@ export default function LiveScreen() {
                   })
                 }
               />
+
               <VictoryScatter
                 size={3}
                 style={{ data: { fill: "#8b0000" } }}
                 data={safeData}
               />
+
+              {latestPoint && (
+                <VictoryScatter
+                  data={[latestPoint]}
+                  size={6}
+                  style={{ data: { fill: "#007AFF" } }}
+                  labels={({ datum }) => `${datum.y}`}
+                  labelComponent={
+                    <VictoryLabel
+                      dx={0}
+                      dy={-16}
+                      textAnchor="middle"
+                      style={{
+                        fontSize: 12,
+                        fill: "black",
+                        fontWeight: "bold",
+                      }}
+                      backgroundStyle={{
+                        fill: "white",
+                        stroke: "#007AFF",
+                        strokeWidth: 1,
+                      }}
+                      backgroundPadding={{
+                        top: 4,
+                        bottom: 4,
+                        left: 6,
+                        right: 6,
+                      }}
+                    />
+                  }
+                />
+              )}
             </VictoryChart>
           </View>
 
-          {/* GLUCOSE BUTTONS */}
           <View style={styles.buttonRow}>
             <TouchableOpacity
               style={[
@@ -318,6 +321,15 @@ export default function LiveScreen() {
               <Text style={styles.buttonText}>Stop Glucose</Text>
             </TouchableOpacity>
           </View>
+
+          <Text
+            style={[
+              styles.statusText,
+              isGlucoseRunning ? styles.statusOn : styles.statusOff,
+            ]}
+          >
+            {isGlucoseRunning ? "● Glucose ACTIVE" : "● Glucose STOPPED"}
+          </Text>
         </>
       ) : null}
 
@@ -340,27 +352,18 @@ const styles = StyleSheet.create({
   },
   logo: { width: 102, height: 32, marginBottom: 6 },
 
-  // Connection Bar
-  connectionBar: {
+  topRow: {
     width: "100%",
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     paddingHorizontal: 20,
-    paddingVertical: 12,
+    marginTop: 6,
+    marginBottom: 10,
   },
-  connectedBar: {
-    backgroundColor: "#d0f5d0",
-    borderBottomWidth: 2,
-    borderColor: "green",
-  },
-  disconnectedBar: {
-    backgroundColor: "#ffd6d6",
-    borderBottomWidth: 2,
-    borderColor: "red",
-  },
-  connectionText: { fontSize: 18, fontWeight: "bold" },
-  connectionSubText: { fontSize: 16, fontWeight: "500" },
+
+  batteryText: { fontSize: 16, fontWeight: "600", color: "black" },
+
   connectButtonSmall: {
     backgroundColor: "dodgerblue",
     paddingVertical: 6,
@@ -376,12 +379,10 @@ const styles = StyleSheet.create({
   connectText: { color: "white", fontSize: 16, fontWeight: "600" },
   disconnectText: { color: "white", fontSize: 16, fontWeight: "600" },
 
-  // ✅ status label
-  statusText: { marginTop: 10, fontSize: 16, fontWeight: "700" },
+  statusText: { marginTop: 12, fontSize: 16, fontWeight: "700" },
   statusOn: { color: "green" },
   statusOff: { color: "red" },
 
-  // Frequency Label
   freqLabel: {
     fontSize: 28,
     fontWeight: "bold",
@@ -403,10 +404,13 @@ const styles = StyleSheet.create({
     color: "white",
   },
 
-  // Graph
-  chartContainer: { marginTop: 10, backgroundColor: "lightblue", borderRadius: 8, position: "relative", },
+  chartContainer: {
+    marginTop: 10,
+    backgroundColor: "lightblue",
+    borderRadius: 8,
+    position: "relative",
+  },
 
-  // date
   dateOverlay: {
     position: "absolute",
     top: 8,
@@ -421,7 +425,6 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
 
-  // Buttons
   buttonRow: { flexDirection: "row", marginTop: 20 },
   button: {
     backgroundColor: "lightblue",
@@ -430,8 +433,6 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginHorizontal: 10,
   },
-  buttonDisabled: {
-    opacity: 0.5,
-  },
+  buttonDisabled: { opacity: 0.5 },
   buttonText: { color: "white", fontSize: 18, fontWeight: "bold" },
 });

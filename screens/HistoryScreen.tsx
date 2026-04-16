@@ -131,7 +131,6 @@ export default function HistoryScreen() {
               new Date(t).toLocaleTimeString([], {
                 hour: "2-digit",
                 minute: "2-digit",
-                second: "2-digit",
               })
             }
             style={{ tickLabels: { fontSize: 12 } }}
