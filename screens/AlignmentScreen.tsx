@@ -254,34 +254,10 @@ export default function AlignmentScreen({ navigation }) {
           {/* ✅ latest point label */}
           {latestPoint && (
             <VictoryScatter
-              data={[latestPoint]}
-              size={6}
-              style={{ data: { fill: "#007AFF" } }}
-              labels={({ datum }) => `${datum.y}`}
-              labelComponent={
-                <VictoryLabel
-                  dx={0}
-                  dy={-16}
-                  textAnchor="middle"
-                  style={{
-                    fontSize: 12,
-                    fill: "black",
-                    fontWeight: "bold",
-                  }}
-                  backgroundStyle={{
-                    fill: "white",
-                    stroke: "#007AFF",
-                    strokeWidth: 1,
-                  }}
-                  backgroundPadding={{
-                    top: 4,
-                    bottom: 4,
-                    left: 6,
-                    right: 6,
-                  }}
-                />
-              }
-            />
+            data={[latestPoint]}
+            size={6}
+            style={{ data: { fill: "#007AFF" } }}
+          />
           )}
         </VictoryChart>
       </View>

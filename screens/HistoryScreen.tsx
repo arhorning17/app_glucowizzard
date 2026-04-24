@@ -7,6 +7,8 @@ import { Ionicons } from "@expo/vector-icons";
 import Share from "react-native-share";
 import RNFS from "react-native-fs";
 
+import { useBLEContext } from "../BLEContext";
+
 export default function HistoryScreen() {
   const [data, setData] = useState<any[]>([]);
   const [timeRange, setTimeRange] = useState(24);
@@ -88,6 +90,21 @@ export default function HistoryScreen() {
   const WINDOW_MS = timeRange * 60 * 60 * 1000;
   const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
 
+  const { connectedDevice, sendDataToDevice } = useBLEContext();
+
+  const handleSend1116 = async () => {
+    if (!connectedDevice) {
+      Alert.alert(
+        "Not Connected",
+        "Press connect to pair with Proximity Communicator."
+      );
+      return;
+    }
+
+    await sendDataToDevice(connectedDevice, "1116");
+    Alert.alert("Sent", "Command 1116 sent.");
+  };
+
   return (
     <View style={styles.container}>
       {/* Logo */}
@@ -152,6 +169,11 @@ export default function HistoryScreen() {
         <TouchableOpacity style={styles.redButton} onPress={handleClear}>
           <Ionicons name="trash-outline" size={20} color="white" style={styles.icon} />
           <Text style={styles.redButtonText}>Clear Database</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity style={styles.exportButton} onPress={handleSend1116}>
+          <Ionicons name="send-outline" size={20} color="white" style={styles.exportIcon} />
+          <Text style={styles.exportButtonText}>Send 1116</Text>
         </TouchableOpacity>
       </View>
     </View>

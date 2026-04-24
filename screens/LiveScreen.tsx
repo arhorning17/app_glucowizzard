@@ -269,32 +269,8 @@ export default function LiveScreen() {
                   data={[latestPoint]}
                   size={6}
                   style={{ data: { fill: "#007AFF" } }}
-                  labels={({ datum }) => `${datum.y}`}
-                  labelComponent={
-                    <VictoryLabel
-                      dx={0}
-                      dy={-16}
-                      textAnchor="middle"
-                      style={{
-                        fontSize: 12,
-                        fill: "black",
-                        fontWeight: "bold",
-                      }}
-                      backgroundStyle={{
-                        fill: "white",
-                        stroke: "#007AFF",
-                        strokeWidth: 1,
-                      }}
-                      backgroundPadding={{
-                        top: 4,
-                        bottom: 4,
-                        left: 6,
-                        right: 6,
-                      }}
-                    />
-                  }
                 />
-              )}
+                )}
             </VictoryChart>
           </View>
 
@@ -331,7 +307,13 @@ export default function LiveScreen() {
             {isGlucoseRunning ? "● Glucose ACTIVE" : "● Glucose STOPPED"}
           </Text>
         </>
-      ) : null}
+      ) : (
+        <View style={styles.emptyContainer}>
+          <Text style={styles.emptyText}>
+            Press Connect to pair with Proximity Communicator
+          </Text>
+        </View>
+      )}
 
       <DeviceModal
         closeModal={() => setModalVisible(false)}
@@ -435,4 +417,18 @@ const styles = StyleSheet.create({
   },
   buttonDisabled: { opacity: 0.5 },
   buttonText: { color: "white", fontSize: 18, fontWeight: "bold" },
+
+  emptyContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 30,
+  },
+  
+  emptyText: {
+    fontSize: 30,
+    textAlign: "center",
+    color: "black",
+    fontWeight: "600",
+  },
 });

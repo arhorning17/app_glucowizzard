@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "glucowizzard-new",
-    "slug": "glucowizzard-new",
+    "name": "glucowizzard-dev",
+    "slug": "glucowizzard-dev",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -30,7 +30,7 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.biorasis.glucowizzard"
+      "bundleIdentifier": "com.biorasis.glucowizzard.dev"
     },
     "android": {
       "adaptiveIcon": {
@@ -44,7 +44,7 @@
         "android.permission.BLUETOOTH_SCAN",
         "android.permission.ACCESS_FINE_LOCATION"
       ],
-      "package": "com.biorasis.glucowizzard"
+      "package": "com.biorasis.glucowizzard.dev"
     },
     "web": {
       "favicon": "./assets/favicon.png"

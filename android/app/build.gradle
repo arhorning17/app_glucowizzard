@@ -115,7 +115,7 @@ android {
 
     namespace 'com.biorasis.glucowizzard'
     defaultConfig {
-        applicationId 'com.biorasis.glucowizzard'
+        applicationId 'com.biorasis.glucowizzard.dev'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
