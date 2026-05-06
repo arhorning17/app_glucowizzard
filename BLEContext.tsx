@@ -5,11 +5,11 @@ import { Device } from "react-native-ble-plx";
 interface BLEContextType {
   requestPermissions: () => Promise<boolean>;
   scanForPeripherals: () => void;
-  connectToDevice: (device: Device) => Promise<void>;   
+  connectToDevice: (device: Device) => Promise<void>;
   disconnectFromDevice: () => void;
   sendDataToDevice: (device: Device, sendString: string) => void;
-  allDevices: Device[];                                 
-  connectedDevice: Device | null;                       
+  allDevices: Device[];
+  connectedDevice: Device | null;
   freqRate: string;
   startUnifiedListener: (device: Device) => Promise<void>;
 }

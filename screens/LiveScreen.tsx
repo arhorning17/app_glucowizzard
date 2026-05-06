@@ -112,13 +112,28 @@ export default function LiveScreen() {
   const safeData = data.filter(
     (p) => Number.isFinite(p.x) && Number.isFinite(p.y)
   );
-
-  const lastX = safeData.length ? safeData[safeData.length - 1].x : now;
-  const domainX: [number, number] = [lastX - WINDOW_MS, lastX];
-
+  
+  // only keep points from last 30 min
+  const cutoffTime = now - WINDOW_MS;
+  
   const visibleData = safeData.filter(
-    (p) => p.x >= domainX[0] && p.x <= domainX[1]
+    (p) => p.x >= cutoffTime && p.x <= now
   );
+  
+  // oldest visible point becomes left edge
+  const oldestVisibleX = visibleData.length
+    ? visibleData[0].x
+    : now;
+  
+  // graph window starts at oldest point
+  const domainX: [number, number] = [
+    oldestVisibleX,
+    oldestVisibleX + WINDOW_MS,
+  ];
+  
+  const lastX = visibleData.length
+    ? visibleData[visibleData.length - 1].x
+    : now;
 
   const yValues = visibleData.map((p) => p.y);
 
@@ -193,7 +208,9 @@ export default function LiveScreen() {
     day: "numeric",
   });
 
-  const latestPoint = safeData.length ? safeData[safeData.length - 1] : null; // ✅ added
+  const latestPoint = visibleData.length
+  ? visibleData[visibleData.length - 1]
+  : null;
 
   return (
     <View style={styles.container}>
@@ -261,7 +278,7 @@ export default function LiveScreen() {
               <VictoryScatter
                 size={3}
                 style={{ data: { fill: "#8b0000" } }}
-                data={safeData}
+                data={visibleData}
               />
 
               {latestPoint && (

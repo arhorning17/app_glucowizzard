@@ -6,6 +6,7 @@ import * as FileSystem from "expo-file-system";
 import base64 from "react-native-base64";
 import { saveDataToDB } from "./src/database";
 import { Alert } from "react-native";
+import { useBLEContext } from "./BLEContext";
 
 const GLUCOWIZZARD_UUID = "6E400001-B5A3-F393-E0A9-E50E24DCCA9E";
 const GLUCOWIZZARD_READ_CHARACTERISTIC =
@@ -73,6 +74,8 @@ function useBLE() {
   const [allDevices, setAllDevices] = useState<Device[]>([]);
   const [connectedDevice, setConnectedDevice] = useState<Device | null>(null);
   const [freqRate, setFreqRate] = useState<string>("0/0/0/0");
+
+  const [isGlucoseRunning, setIsGlucoseRunning] = useState(false);
 
   // Fast in-memory buffers / refs (no rerenders)
   const csvRowsRef = useRef<string[]>([]);
@@ -375,9 +378,6 @@ function useBLE() {
 
       await new Promise((res) => setTimeout(res, 300));
 
-      // Request file dump
-      console.log("Sending 1116 for file dump...");
-      await sendDataToDevice(deviceConnection, "1116");
     } catch (e) {
       console.log("FAILED TO CONNECT:", e);
       Alert.alert("FAILED TO CONNECT.")
@@ -438,6 +438,7 @@ function useBLE() {
     freqRate,
     sendDataToDevice,
     startUnifiedListener,
+
   };
 }
 

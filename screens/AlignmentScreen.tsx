@@ -27,8 +27,8 @@ export default function AlignmentScreen({ navigation }) {
 
   const [data, setData] = useState<DataPoint[]>([]);
   const [windowStart, setWindowStart] = useState<number | null>(null);
-  const [isAlignmentRunning, setIsAlignmentRunning] = useState(false);
   const [ledCenterMode, setLedCenterMode] = useState(false);
+  const [isAlignmentRunning, setIsAlignmentRunning] = useState(false);
 
   const WINDOW_MS = 5 * 60 * 1000;
 

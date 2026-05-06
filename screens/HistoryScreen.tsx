@@ -12,6 +12,9 @@ import { useBLEContext } from "../BLEContext";
 export default function HistoryScreen() {
   const [data, setData] = useState<any[]>([]);
   const [timeRange, setTimeRange] = useState(24);
+  const [glucoseHistory, setGlucoseHistory] = useState([]);
+  const [longGlucoseHistory, setLongGlucoseHistory] = useState([]);
+  
 
   useEffect(() => {
     loadHistory();
@@ -59,6 +62,7 @@ export default function HistoryScreen() {
     }
   };
 
+  
   // Clear DB
   const handleClear = () => {
     Alert.alert(
@@ -69,16 +73,19 @@ export default function HistoryScreen() {
         {
           text: "Clear",
           style: "destructive",
-          onPress: () => {
-            clearDatabase(
-              () => {
-                loadHistory(); // refresh graph
-                Alert.alert("Success", "Database cleared.");
-              },
-              () => {
-                Alert.alert("Error", "Failed to clear database.");
-              }
-            );
+          onPress: async () => {
+            try {
+              clearDatabase(setGlucoseHistory, setLongGlucoseHistory);
+
+              // reload from DB
+              loadHistory();
+              setData([]);
+
+              Alert.alert("Success", "Database cleared.");
+            } catch (error) {
+              console.error(error);
+              Alert.alert("Error", "Failed to clear database.");
+            }
           },
         },
       ]
@@ -157,7 +164,7 @@ export default function HistoryScreen() {
         </VictoryChart>
       </View>
 
-      {/* 📦 Data Management Section (MOVED FROM SETTINGS) */}
+      {/* 📦 Data Management Section */}
       <View style={styles.sectionBox}>
         <Text style={styles.sectionTitle}>Data Management</Text>
 
@@ -200,7 +207,7 @@ const styles = StyleSheet.create({
 
   chartContainer: { marginTop: 10, backgroundColor: "lightblue", borderRadius: 8 },
 
-  /* --- NEW SECTION BOX + BUTTON STYLES MOVED FROM SETTINGS --- */
+
   sectionBox: {
     width: "92%",
     backgroundColor: "white",
