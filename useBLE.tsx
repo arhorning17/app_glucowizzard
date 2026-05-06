@@ -367,9 +367,10 @@ function useBLE() {
       startUnifiedListener(deviceConnection);
 
       // Stop alignment
+      var curTime = Math.floor(Date.now() / 1000)
       await sendDataToDevice(
         deviceConnection,
-        "1113/" + new Date().toISOString()
+        "1113/" + curTime
       );
 
       await new Promise((res) => setTimeout(res, 300));
@@ -381,6 +382,7 @@ function useBLE() {
       console.log("FAILED TO CONNECT:", e);
       Alert.alert("FAILED TO CONNECT.")
     }
+
   };
 
   const sendDataToDevice = async (device: Device, sendString: string) => {
