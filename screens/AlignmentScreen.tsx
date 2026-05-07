@@ -30,7 +30,7 @@ export default function AlignmentScreen({ navigation }) {
   const [ledCenterMode, setLedCenterMode] = useState(false);
   const [isAlignmentRunning, setIsAlignmentRunning] = useState(false);
 
-  const WINDOW_MS = 5 * 60 * 1000;
+  const WINDOW_MS = 5 * 10 * 1000;
 
   let latestAlignmentVal = NaN;
   let batteryVal = 0;
@@ -76,11 +76,17 @@ export default function AlignmentScreen({ navigation }) {
     if (typeof freqRate !== "string" || !freqRate.includes("/")) return;
 
     const parts = freqRate.split("/");
+    const packetEpoch = Number(parts[0]);
     const alignmentVal = Number(parts[1]);
 
     if (!Number.isFinite(alignmentVal)) return;
 
-    const t = Date.now();
+    if (!Number.isFinite(packetEpoch)) return;
+
+    const t =
+      packetEpoch < 10000000000
+        ? packetEpoch * 1000
+        : packetEpoch;
 
     setData((prev) => {
       const next = [...prev, { x: t, y: alignmentVal }];
@@ -241,15 +247,43 @@ export default function AlignmentScreen({ navigation }) {
             }}
           />
           <VictoryAxis
-            tickFormat={(t) =>
-              new Date(t).toLocaleTimeString([], {
+            label="Time"
+            style={{
+              axisLabel: {
+                padding: 30,
+                fontSize: 18,
+              },
+              tickLabels: {
+                fill: "transparent",
+              },
+              axis: {
+                stroke: "#888",
+              },
+              ticks: {
+                stroke: "#888",
+              },
+            }}
+          />
+
+          <VictoryScatter
+            data={visibleData}
+            size={3}
+            labels={({ datum }) =>
+              new Date(datum.x).toLocaleTimeString([], {
                 hour: "2-digit",
                 minute: "2-digit",
               })
             }
+            labelComponent={
+              <VictoryLabel
+                dy={20}
+                style={{
+                  fontSize: 10,
+                  fill: "#003B7A",
+                }}
+              />
+            }
           />
-
-          <VictoryScatter data={safeData} size={3} />
 
           {/* ✅ latest point label */}
           {latestPoint && (
